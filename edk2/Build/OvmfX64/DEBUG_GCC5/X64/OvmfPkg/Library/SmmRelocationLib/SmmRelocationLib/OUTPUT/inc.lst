@@ -1,0 +1,14 @@
+-I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/X64
+-I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib
+-I/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/DEBUG
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Test/UnitTest/Include
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Test/Mock/Include
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/MipiSysTLib/mipisyst/library/include
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/X64
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Include
+-I/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Test/Mock/Include
+-I/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg
+-I/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Include
