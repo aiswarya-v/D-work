@@ -19,7 +19,7 @@ extern GUID  gEfiCallerIdGuid;
 extern GUID  gEdkiiDscPlatformGuid;
 extern CHAR8 *gEfiCallerBaseName;
 
-#define STACK_COOKIE_VALUE 0x6AE8CC2E4D6D85F4ULL
+#define STACK_COOKIE_VALUE 0x4694AAD81B18A41FULL
 
 // Guids
 extern EFI_GUID gMeasuredFvHobGuid;

@@ -69,5 +69,5 @@
 ##   GCC:DEBUG_GCC5_X64_VFRPP_FLAGS = -x c -E -DVFRCOMPILE --include $(MODULE_NAME)StrDefs.h
 ##   GCC:DEBUG_GCC5_X64_DLINK_FLAGS = -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,$(IMAGE_ENTRY_POINT) -u $(IMAGE_ENTRY_POINT) -Wl,-Map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os
 ##   GCC:DEBUG_GCC5_X64_ASL_FLAGS = 
-##   GCC:DEBUG_GCC5_X64_NASMB_FLAGS = -f bin -I/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/ResetVector/Vtf0/
+##   GCC:DEBUG_GCC5_X64_NASMB_FLAGS = -f bin -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/ResetVector/Vtf0/
 ##   GCC:DEBUG_GCC5_X64_DLINK2_FLAGS = -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=$(EDK_TOOLS_PATH)/Scripts/GccBase.lds -Wno-error

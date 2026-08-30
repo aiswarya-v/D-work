@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = LoadLinuxLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/LoadLinuxLib
 PACKAGE_RELATIVE_DIR = Library/LoadLinuxLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/eaec1915-65a0-43a9-bf0b-a76438da61dbLoadLinuxLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/eaec1915-65a0-43a9-bf0b-a76438da61dbLoadLinuxLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -218,8 +218,8 @@ NASM_INC =  \
     -I$(WORKSPACE)/OvmfPkg/ \
     -I$(WORKSPACE)/OvmfPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/inc.lst
 
 
 #
@@ -229,7 +229,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib \
               
 
 #
@@ -307,25 +307,25 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/Linux.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Linux.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Linux.obj : $(WORKSPACE)/OvmfPkg/Library/LoadLinuxLib/Linux.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./Linux.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib/Linux.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./Linux.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib/Linux.c
 
 $(OUTPUT_DIR)/LinuxGdt.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/LinuxGdt.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/LinuxGdt.obj : $(WORKSPACE)/OvmfPkg/Library/LoadLinuxLib/LinuxGdt.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./LinuxGdt.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib/LinuxGdt.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./LinuxGdt.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib/LinuxGdt.c
 
 $(OUTPUT_DIR)/LoadLinuxLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/LoadLinuxLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/LoadLinuxLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/JumpToKernel.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/JumpToKernel.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/JumpToKernel.obj : $(WORKSPACE)/OvmfPkg/Library/LoadLinuxLib/JumpToKernel.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib/JumpToKernel.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib/JumpToKernel.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/LoadLinuxLib/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib/JumpToKernel.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib/JumpToKernel.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/LoadLinuxLib/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib/OUTPUT/./JumpToKernel.iii
 
 
 

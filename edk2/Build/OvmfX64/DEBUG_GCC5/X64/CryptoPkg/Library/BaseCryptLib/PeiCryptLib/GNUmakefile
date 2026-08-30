@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PeiCryptLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = CryptoPkg/Library/BaseCryptLib
 PACKAGE_RELATIVE_DIR = Library/BaseCryptLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9a2a4375-194c-4e97-9f67-547ec98d96caPeiCryptLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9a2a4375-194c-4e97-9f67-547ec98d96caPeiCryptLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -261,7 +261,7 @@ INC =  \
     -I$(WORKSPACE)/CryptoPkg/Library/MbedTlsLib/mbedtls/include/mbedtls \
     -I$(WORKSPACE)/CryptoPkg/Library/MbedTlsLib/mbedtls/library
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/object_files.lst
 
 
 #
@@ -271,7 +271,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib \
               
 
 #
@@ -346,185 +346,185 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs1OaepNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs1OaepNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs1OaepNull.c
-
-$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptEcNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptEcNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptEcNull.c
-
-$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptXkcp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptXkcp.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptXkcp.c
-
-$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/ConstantTimeClock.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/ConstantTimeClock.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/ConstantTimeClock.c
-
-$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/BaseMemAllocation.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/BaseMemAllocation.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/BaseMemAllocation.c
-
-$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs5Pbkdf2Null.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs5Pbkdf2Null.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs5Pbkdf2Null.c
-
-$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPss.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaPss.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPss.c
-
-$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAeadAesGcmNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Cipher/CryptAeadAesGcmNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAeadAesGcmNull.c
-
-$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptMd5.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptMd5.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptMd5.c
-
-$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7SignNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7SignNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7SignNull.c
-
 $(OUTPUT_DIR)/Pk/CryptDhNull.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Pk/CryptDhNull.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Pk/CryptDhNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptDhNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptDhNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptDhNull.c
-
-$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaExtNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaExtNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaExtNull.c
-
-$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Rand/CryptRandNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Rand/CryptRandNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Rand/CryptRandNull.c
-
-$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/CrtWrapper.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c
-
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyCommon.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyCommon.c
-
-$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptCShake256.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptCShake256.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptCShake256.c
-
-$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptAuthenticodeNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptAuthenticodeNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptAuthenticodeNull.c
-
-$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha3.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha3.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha3.c
-
-$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hmac/CryptHmac.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hmac/CryptHmac.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hmac/CryptHmac.c
-
-$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaBasic.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaBasic.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaBasic.c
-
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyEku.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyEku.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyEku.c
-
-$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptDispatchApPei.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptDispatchApPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptDispatchApPei.c
-
-$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptX509Null.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptX509Null.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptX509Null.c
-
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyBase.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyBase.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyBase.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptDhNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptDhNull.c
 
 $(OUTPUT_DIR)/Hash/CryptSm3.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Hash/CryptSm3.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Hash/CryptSm3.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSm3.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSm3.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSm3.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSm3.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSm3.c
 
-$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pem/CryptPemNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pem/CryptPemNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pem/CryptPemNull.c
+$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptRsaExtNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaExtNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaExtNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaExtNull.c
 
-$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptTsNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptTsNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptTsNull.c
+$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Rand/CryptRandNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Rand/CryptRandNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Rand/CryptRandNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Rand/CryptRandNull.c
 
-$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha256.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha256.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha256.c
+$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/SysCall/BaseMemAllocation.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/BaseMemAllocation.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/BaseMemAllocation.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/BaseMemAllocation.c
 
-$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha1.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha1.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha1.c
+$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptDispatchApPei.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptDispatchApPei.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptDispatchApPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptDispatchApPei.c
+
+$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptRsaBasic.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaBasic.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaBasic.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaBasic.c
+
+$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptXkcp.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptXkcp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptXkcp.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptXkcp.c
 
 $(OUTPUT_DIR)/Cipher/CryptAes.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Cipher/CryptAes.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Cipher/CryptAes.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAes.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Cipher/CryptAes.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAes.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Cipher/CryptAes.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAes.c
+
+$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptEcNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptEcNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptEcNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptEcNull.c
+
+$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptRsaPss.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPss.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaPss.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPss.c
+
+$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs7SignNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7SignNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7SignNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7SignNull.c
 
 $(OUTPUT_DIR)/Bn/CryptBnNull.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Bn/CryptBnNull.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Bn/CryptBnNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Bn/CryptBnNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Bn/CryptBnNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Bn/CryptBnNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Bn/CryptBnNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Bn/CryptBnNull.c
 
-$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha512.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha512.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha512.c
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyBase.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyBase.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyBase.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyBase.c
+
+$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs5Pbkdf2Null.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs5Pbkdf2Null.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs5Pbkdf2Null.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs5Pbkdf2Null.c
+
+$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hmac/CryptHmac.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hmac/CryptHmac.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hmac/CryptHmac.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hmac/CryptHmac.c
 
 $(OUTPUT_DIR)/Pk/CryptRsaPssSignNull.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Pk/CryptRsaPssSignNull.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Pk/CryptRsaPssSignNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPssSignNull.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaPssSignNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPssSignNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptRsaPssSignNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptRsaPssSignNull.c
 
-$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Kdf/CryptHkdf.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Kdf/CryptHkdf.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Kdf/CryptHkdf.c
+$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptSha512.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha512.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha512.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha512.c
+
+$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Cipher/CryptAeadAesGcmNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAeadAesGcmNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Cipher/CryptAeadAesGcmNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Cipher/CryptAeadAesGcmNull.c
+
+$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs1OaepNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs1OaepNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs1OaepNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs1OaepNull.c
+
+$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptMd5.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptMd5.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptMd5.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptMd5.c
+
+$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptAuthenticodeNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptAuthenticodeNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptAuthenticodeNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptAuthenticodeNull.c
+
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyEku.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyEku.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyEku.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyEku.c
+
+$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptSha256.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha256.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha256.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha256.c
 
 $(OUTPUT_DIR)/Hash/CryptParallelHash.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Hash/CryptParallelHash.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Hash/CryptParallelHash.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptParallelHash.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptParallelHash.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptParallelHash.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptParallelHash.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptParallelHash.c
+
+$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Kdf/CryptHkdf.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Kdf/CryptHkdf.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Kdf/CryptHkdf.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Kdf/CryptHkdf.c
+
+$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptTsNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptTsNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptTsNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptTsNull.c
+
+$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/SysCall/CrtWrapper.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/CrtWrapper.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c
+
+$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptSha3.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha3.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha3.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha3.c
+
+$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/SysCall/ConstantTimeClock.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/SysCall/ConstantTimeClock.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/SysCall/ConstantTimeClock.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/SysCall/ConstantTimeClock.c
+
+$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptSha1.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha1.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptSha1.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptSha1.c
+
+$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptX509Null.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptX509Null.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptX509Null.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptX509Null.c
+
+$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pem/CryptPemNull.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pem/CryptPemNull.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pem/CryptPemNull.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pem/CryptPemNull.c
+
+$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Hash/CryptCShake256.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Hash/CryptCShake256.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Hash/CryptCShake256.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Hash/CryptCShake256.c
+
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pk/CryptPkcs7VerifyCommon.obj : $(WORKSPACE)/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyCommon.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/Pk/CryptPkcs7VerifyCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/CryptoPkg/Library/BaseCryptLib/Pk/CryptPkcs7VerifyCommon.c
 
 $(OUTPUT_DIR)/PeiCryptLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PeiCryptLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/CryptoPkg/Library/BaseCryptLib/PeiCryptLib/OUTPUT/PeiCryptLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

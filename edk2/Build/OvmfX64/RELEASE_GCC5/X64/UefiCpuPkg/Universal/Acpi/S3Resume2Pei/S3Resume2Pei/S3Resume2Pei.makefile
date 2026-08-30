@@ -1,1 +1,0 @@
-/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/RELEASE_GCC5/X64/UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei/GNUmakefile

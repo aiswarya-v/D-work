@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PeiServicesTablePointerLibIdt
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdePkg/Library/PeiServicesTablePointerLibIdt
 PACKAGE_RELATIVE_DIR = Library/PeiServicesTablePointerLibIdt
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/PeiServicesTablePointerLibIdt
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/DED3F743-CE2C-4ba6-92A2-FFCE2A6D72D9PeiServicesTablePointerLibIdt
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/PeiServicesTablePointerLibIdt
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/DED3F743-CE2C-4ba6-92A2-FFCE2A6D72D9PeiServicesTablePointerLibIdt
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -203,7 +203,7 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/object_files.lst
 
 
 #
@@ -213,7 +213,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib \
               
 
 #
@@ -291,12 +291,12 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/PeiServicesTablePointer.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PeiServicesTablePointer.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PeiServicesTablePointer.obj : $(WORKSPACE)/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointer.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/./PeiServicesTablePointer.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointer.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/./PeiServicesTablePointer.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointer.c
 
 $(OUTPUT_DIR)/PeiServicesTablePointerLibIdt.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PeiServicesTablePointerLibIdt.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt/OUTPUT/PeiServicesTablePointerLibIdt.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

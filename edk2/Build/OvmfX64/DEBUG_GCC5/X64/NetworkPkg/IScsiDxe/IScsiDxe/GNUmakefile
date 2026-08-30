@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = IScsiDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = NetworkPkg/IScsiDxe
 PACKAGE_RELATIVE_DIR = IScsiDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/86CDDF93-4872-4597-8AF9-A35AE4D3725FIScsiDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/86CDDF93-4872-4597-8AF9-A35AE4D3725FIScsiDxe
 
 MODULE_ENTRY_POINT = IScsiDriverEntryPoint
 ARCH_ENTRY_POINT = IScsiDriverEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -255,15 +255,15 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/CryptoPkg \
     -I$(WORKSPACE)/CryptoPkg/Include \
     -I$(WORKSPACE)/NetworkPkg \
     -I$(WORKSPACE)/NetworkPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -273,7 +273,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -385,113 +385,113 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/IScsiIbft.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiIbft.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiIbft.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiIbft.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiIbft.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiIbft.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiIbft.c
-
-$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiInitiatorName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiInitiatorName.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiInitiatorName.c
-
-$(OUTPUT_DIR)/IScsiDriver.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiDriver.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiDriver.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiDriver.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDriver.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDriver.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiDriver.c
-
-$(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/ComponentName.c
+$(OUTPUT_DIR)/IScsiCHAP.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiCHAP.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiCHAP.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiCHAP.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiCHAP.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiCHAP.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiCHAP.c
 
 $(OUTPUT_DIR)/IScsiDhcp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IScsiDhcp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IScsiDhcp.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
 $(OUTPUT_DIR)/IScsiDhcp.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDhcp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDhcp.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiDhcp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDhcp.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiDhcp.c
 
-$(OUTPUT_DIR)/IScsiMisc.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiMisc.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiMisc.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiMisc.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiMisc.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiMisc.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiMisc.c
+$(OUTPUT_DIR)/IScsiDriver.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiDriver.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiDriver.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiDriver.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDriver.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDriver.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiDriver.c
 
-$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiExtScsiPassThru.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiExtScsiPassThru.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiExtScsiPassThru.c
+$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiInitiatorName.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiInitiatorName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiInitiatorName.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiInitiatorName.c
 
-$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/AutoGen.c
-
-$(OUTPUT_DIR)/IScsiConfigVfr.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiConfigVfr.obj : $(DEBUG_DIR)/IScsiConfigVfr.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiConfigVfr.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiConfigVfr.c
-
-$(OUTPUT_DIR)/IScsiDhcp6.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiDhcp6.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiDhcp6.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiDhcp6.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDhcp6.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDhcp6.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiDhcp6.c
+$(OUTPUT_DIR)/IScsiIbft.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiIbft.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiIbft.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiIbft.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiIbft.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiIbft.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiIbft.c
 
 $(OUTPUT_DIR)/IScsiProto.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IScsiProto.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IScsiProto.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
 $(OUTPUT_DIR)/IScsiProto.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiProto.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiProto.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiProto.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiProto.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiProto.c
 
-$(OUTPUT_DIR)/IScsiConfig.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiConfig.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiConfig.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiConfig.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiConfig.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfig.c
+$(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/ComponentName.c
 
-$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiAuthenticationInfo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiAuthenticationInfo.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiAuthenticationInfo.c
+$(OUTPUT_DIR)/IScsiDhcp6.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiDhcp6.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiDhcp6.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiDhcp6.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDhcp6.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDhcp6.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiDhcp6.c
+
+$(OUTPUT_DIR)/IScsiConfigVfr.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiConfigVfr.obj : $(DEBUG_DIR)/IScsiConfigVfr.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiConfigVfr.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiConfigVfr.c
 
 $(OUTPUT_DIR)/IScsiDns.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IScsiDns.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IScsiDns.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
 $(OUTPUT_DIR)/IScsiDns.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiDns.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDns.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiDns.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiDns.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiDns.c
 
-$(OUTPUT_DIR)/IScsiCHAP.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/IScsiCHAP.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/IScsiCHAP.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
-$(OUTPUT_DIR)/IScsiCHAP.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiCHAP.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiCHAP.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiCHAP.c
+$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiExtScsiPassThru.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiExtScsiPassThru.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiExtScsiPassThru.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiExtScsiPassThru.c
+
+$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiAuthenticationInfo.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiAuthenticationInfo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiAuthenticationInfo.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiAuthenticationInfo.c
+
+$(OUTPUT_DIR)/IScsiMisc.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiMisc.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiMisc.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiMisc.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiMisc.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiMisc.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiMisc.c
+
+$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/IScsiConfig.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/IScsiConfig.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/IScsiConfig.obj : $(DEBUG_DIR)/IScsiDxeStrDefs.h
+$(OUTPUT_DIR)/IScsiConfig.obj : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiConfig.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./IScsiConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfig.c
 
 $(OUTPUT_DIR)/IScsiDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/IScsiDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/IScsiDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/IScsiDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/IScsiDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
 
 $(OUTPUT_DIR)/IScsiDxe.efi : $(DEBUG_DIR)/IScsiDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 
@@ -505,8 +505,8 @@ $(DEBUG_DIR)/IScsiConfigVfr.c : $(MAKE_FILE)
 $(DEBUG_DIR)/IScsiConfigVfr.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/IScsiConfigVfr.c : $(DEBUG_DIR)/IScsiDxeStrDefs.h
 $(DEBUG_DIR)/IScsiConfigVfr.c : $(WORKSPACE)/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr > $(OUTPUT_DIR)/IScsiConfigVfr.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/. $(OUTPUT_DIR)/IScsiConfigVfr.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr > $(OUTPUT_DIR)/IScsiConfigVfr.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/. $(OUTPUT_DIR)/IScsiConfigVfr.i
 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map : $(OUTPUT_DIR)/IScsiDxe.map
 	test -f $(OUTPUT_DIR)/IScsiDxe.map && $(CP) $(OUTPUT_DIR)/IScsiDxe.map $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map
@@ -517,7 +517,7 @@ $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC1.1.dpx : $(OUTPUT_DIR)/IScsiDxe.depex
 $(FFS_OUTPUT_DIR)/IScsiDxeOffset.raw : $(FFS_OUTPUT_DIR)/IScsiDxe.offset
 	-test -e $(FFS_OUTPUT_DIR)/IScsiDxe.offset && GenSec -s EFI_SECTION_RAW -o $(FFS_OUTPUT_DIR)/IScsiDxeOffset.raw $(FFS_OUTPUT_DIR)/IScsiDxe.offset
 $(FFS_OUTPUT_DIR)/IScsiDxe.offset : $(DEBUG_DIR)/IScsiDxe.efi
-	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/IScsiDxe.offset --ModuleName=IScsiDxe --DebugDir=/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG 
+	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/IScsiDxe.offset --ModuleName=IScsiDxe --DebugDir=/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.1.pe32 : $(OUTPUT_DIR)/IScsiDxe.efi
 	-test -e $(OUTPUT_DIR)/IScsiDxe.efi && GenSec -s EFI_SECTION_PE32 -o $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.1.pe32 $(OUTPUT_DIR)/IScsiDxe.efi
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC3.ui : $(MODULE_DIR)/$(MODULE_FILE)

@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = UefiDevicePathLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdePkg/Library/UefiDevicePathLib
 PACKAGE_RELATIVE_DIR = Library/UefiDevicePathLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/91c1677a-e57f-4191-8b8e-eb7711a716e0UefiDevicePathLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/91c1677a-e57f-4191-8b8e-eb7711a716e0UefiDevicePathLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -207,7 +207,7 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/object_files.lst
 
 
 #
@@ -217,7 +217,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib \
               
 
 #
@@ -292,35 +292,35 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/DevicePathToText.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DevicePathToText.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DevicePathToText.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathToText.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
-
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilitiesDxeSmm.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
-
-$(OUTPUT_DIR)/DevicePathUtilities.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DevicePathUtilities.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DevicePathUtilities.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilities.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
-
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DevicePathFromText.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathFromText.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathFromText.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathFromText.c
 
 $(OUTPUT_DIR)/UefiDevicePathLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/UefiDevicePathLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/UefiDevicePathLib.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./UefiDevicePathLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./UefiDevicePathLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.c
+
+$(OUTPUT_DIR)/DevicePathUtilities.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DevicePathUtilities.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DevicePathUtilities.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilities.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
+
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DevicePathUtilitiesDxeSmm.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathUtilitiesDxeSmm.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilitiesDxeSmm.c
+
+$(OUTPUT_DIR)/DevicePathToText.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DevicePathToText.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DevicePathToText.obj : $(WORKSPACE)/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/./DevicePathToText.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathToText.c
 
 $(OUTPUT_DIR)/UefiDevicePathLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UefiDevicePathLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

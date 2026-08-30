@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = UefiHandleParsingLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = ShellPkg/Library/UefiHandleParsingLib
 PACKAGE_RELATIVE_DIR = Library/UefiHandleParsingLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiHandleParsingLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/3CDC7177-CC2A-4678-BA8F-1A936A093FA4UefiHandleParsingLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiHandleParsingLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/3CDC7177-CC2A-4678-BA8F-1A936A093FA4UefiHandleParsingLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -203,13 +203,13 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/ShellPkg \
     -I$(WORKSPACE)/ShellPkg/Include \
     -I$(WORKSPACE)/ShellPkg/Test/Mock/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/object_files.lst
 
 
 #
@@ -219,7 +219,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib \
               
 
 #
@@ -294,22 +294,22 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(DEBUG_DIR)/UefiHandleParsingLibStrDefs.h
-$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(WORKSPACE)/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/./UefiHandleParsingLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.c
-
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/UefiHandleParsingLibStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(DEBUG_DIR)/UefiHandleParsingLibStrDefs.h
+$(OUTPUT_DIR)/UefiHandleParsingLib.obj : $(WORKSPACE)/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/./UefiHandleParsingLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.c
 
 $(OUTPUT_DIR)/UefiHandleParsingLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UefiHandleParsingLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib/OUTPUT/UefiHandleParsingLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

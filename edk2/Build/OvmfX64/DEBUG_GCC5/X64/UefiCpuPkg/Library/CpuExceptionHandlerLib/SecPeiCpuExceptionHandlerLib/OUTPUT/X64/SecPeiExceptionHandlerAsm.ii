@@ -1,18 +1,18 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 1
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/PiPei.h" 1
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/PiPei.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 1
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h" 1
-# 21 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/X64/ProcessorBind.h" 1
-# 162 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/X64/ProcessorBind.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 1
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/PiPei.h" 1
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/PiPei.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 1
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h" 1
+# 21 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/X64/ProcessorBind.h" 1
+# 162 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/X64/ProcessorBind.h"
 typedef unsigned long long UINT64;
 
 
@@ -68,8 +68,8 @@ typedef UINT64 UINTN;
 
 
 typedef INT64 INTN;
-# 22 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h" 2
-# 213 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 22 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h" 2
+# 213 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 typedef struct {
   UINT32 Data1;
   UINT16 Data2;
@@ -108,11 +108,11 @@ struct _LIST_ENTRY {
   LIST_ENTRY *ForwardLink;
   LIST_ENTRY *BackLink;
 };
-# 607 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 607 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 typedef __builtin_ms_va_list VA_LIST;
-# 711 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 711 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 typedef UINTN *BASE_LIST;
-# 816 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 816 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 _Static_assert (sizeof (BOOLEAN) == 1, "sizeof (BOOLEAN) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (INT8) == 1, "sizeof (INT8) does not meet UEFI Specification Data Type requirements");
 _Static_assert (sizeof (UINT8) == 1, "sizeof (UINT8) does not meet UEFI Specification Data Type requirements");
@@ -141,7 +141,7 @@ _Static_assert (_Alignof (CHAR16) == sizeof (CHAR16), "Alignment of CHAR16 does 
 _Static_assert (_Alignof (INTN) == sizeof (INTN), "Alignment of INTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (UINTN) == sizeof (UINTN), "Alignment of UINTN does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (void *) == sizeof (void *), "Alignment of VOID * does not meet UEFI Specification Data Type requirements");
-# 852 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 852 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 typedef enum {
   __VerifyUint8EnumValue = 0xff
 } __VERIFY_UINT8_ENUM_SIZE;
@@ -161,10 +161,10 @@ _Static_assert (sizeof (__VERIFY_INT32_ENUM_SIZE) == 4, "Size of enum does not m
 _Static_assert (_Alignof (__VERIFY_UINT8_ENUM_SIZE) == sizeof (__VERIFY_UINT8_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_UINT16_ENUM_SIZE) == sizeof (__VERIFY_UINT16_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
 _Static_assert (_Alignof (__VERIFY_INT32_ENUM_SIZE) == sizeof (__VERIFY_INT32_ENUM_SIZE), "Alignment of enum does not meet UEFI Specification Data Type requirements");
-# 1026 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Base.h"
+# 1026 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Base.h"
 typedef UINTN RETURN_STATUS;
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 2
-# 25 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiBaseType.h" 2
+# 25 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
 typedef GUID EFI_GUID;
 
 
@@ -196,7 +196,7 @@ typedef UINT64 EFI_PHYSICAL_ADDRESS;
 
 
 typedef UINT64 EFI_VIRTUAL_ADDRESS;
-# 68 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
+# 68 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiBaseType.h"
 typedef struct {
   UINT16 Year;
   UINT8 Month;
@@ -237,13 +237,13 @@ typedef union {
   EFI_IPv4_ADDRESS v4;
   EFI_IPv6_ADDRESS v6;
 } EFI_IP_ADDRESS;
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/PiPei.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h" 1
-# 15 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 1
-# 34 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/WinCertificate.h" 1
-# 24 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/PiPei.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h" 1
+# 15 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 1
+# 34 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/WinCertificate.h" 1
+# 24 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
 
 
@@ -268,7 +268,7 @@ typedef struct {
 
 
 } WIN_CERTIFICATE;
-# 58 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 58 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
   EFI_GUID HashType;
   UINT8 PublicKey[256];
@@ -297,7 +297,7 @@ typedef struct {
 
   UINT8 CertData[1];
 } WIN_CERTIFICATE_UEFI_GUID;
-# 95 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 95 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/WinCertificate.h"
 typedef struct {
 
 
@@ -309,11 +309,11 @@ typedef struct {
 
 
   EFI_GUID HashAlgorithm;
-# 116 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/WinCertificate.h"
+# 116 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/WinCertificate.h"
 } WIN_CERTIFICATE_EFI_PKCS1_15;
 
 extern EFI_GUID gEfiCertTypeRsa2048Sha256Guid;
-# 35 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 2
+# 35 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h" 2
 
 
 
@@ -391,7 +391,7 @@ typedef enum {
 
   EfiUnacceptedMemoryType,
   EfiMaxMemoryType,
-# 123 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 123 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
   MEMORY_TYPE_OEM_RESERVED_MIN = 0x70000000,
   MEMORY_TYPE_OEM_RESERVED_MAX = 0x7FFFFFFF,
   MEMORY_TYPE_OS_RESERVED_MIN = 0x80000000,
@@ -462,7 +462,7 @@ typedef struct {
 
   UINT32 Reserved;
 } EFI_TABLE_HEADER;
-# 209 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 209 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
 typedef struct {
 
 
@@ -471,10 +471,10 @@ typedef struct {
 
 
   UINT64 MonotonicCount;
-# 225 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 225 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
   WIN_CERTIFICATE_UEFI_GUID AuthInfo;
 } EFI_VARIABLE_AUTHENTICATION;
-# 236 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
+# 236 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Uefi/UefiMultiPhase.h"
 typedef struct {
 
 
@@ -486,15 +486,15 @@ typedef struct {
 
   WIN_CERTIFICATE_UEFI_GUID AuthInfo;
 } EFI_VARIABLE_AUTHENTICATION_2;
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 1
-# 15 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h" 1
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 1
+# 15 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h" 1
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef UINT32 EFI_FV_FILE_ATTRIBUTES;
-# 30 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 30 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef UINT32 EFI_FVB_ATTRIBUTES_2;
-# 85 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 85 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef struct {
 
 
@@ -559,7 +559,7 @@ typedef struct {
 
   EFI_FV_BLOCK_MAP_ENTRY BlockMap[1];
 } EFI_FIRMWARE_VOLUME_HEADER;
-# 160 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
+# 160 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareVolume.h"
 typedef struct {
 
 
@@ -646,9 +646,9 @@ typedef struct {
 
   UINT32 UsedSize;
 } EFI_FIRMWARE_VOLUME_EXT_ENTRY_USED_SIZE_TYPE;
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h" 1
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h" 1
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef union {
   struct {
 
@@ -657,7 +657,7 @@ typedef union {
 
 
     UINT8 Header;
-# 36 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 36 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
     UINT8 File;
   } Checksum;
 
@@ -675,7 +675,7 @@ typedef union {
 typedef UINT8 EFI_FV_FILETYPE;
 typedef UINT8 EFI_FFS_FILE_ATTRIBUTES;
 typedef UINT8 EFI_FFS_FILE_STATE;
-# 106 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 106 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -725,7 +725,7 @@ typedef struct {
 
 
   EFI_FFS_FILE_ATTRIBUTES Attributes;
-# 163 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 163 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
   UINT8 Size[3];
 
 
@@ -739,9 +739,9 @@ typedef struct {
 
   UINT64 ExtendedSize;
 } EFI_FFS_FILE_HEADER2;
-# 193 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 193 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef UINT8 EFI_SECTION_TYPE;
-# 230 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 230 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -776,7 +776,7 @@ typedef struct {
 
 typedef EFI_COMMON_SECTION_HEADER EFI_COMPATIBILITY16_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_COMPATIBILITY16_SECTION2;
-# 274 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 274 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -806,7 +806,7 @@ typedef struct {
 
   UINT8 CompressionType;
 } EFI_COMPRESSION_SECTION2;
-# 313 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 313 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_DISPOSABLE_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_DISPOSABLE_SECTION2;
 
@@ -846,7 +846,7 @@ typedef struct {
 
   EFI_GUID SubTypeGuid;
 } EFI_FREEFORM_SUBTYPE_GUID_SECTION2;
-# 361 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 361 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef struct {
 
 
@@ -896,7 +896,7 @@ typedef EFI_COMMON_SECTION_HEADER2 EFI_PE32_SECTION2;
 
 typedef EFI_COMMON_SECTION_HEADER EFI_PEI_DEPEX_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_PEI_DEPEX_SECTION2;
-# 420 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 420 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_PIC_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_PIC_SECTION2;
 
@@ -911,7 +911,7 @@ typedef EFI_COMMON_SECTION_HEADER2 EFI_TE_SECTION2;
 
 typedef EFI_COMMON_SECTION_HEADER EFI_RAW_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_RAW_SECTION2;
-# 443 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
+# 443 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiFirmwareFile.h"
 typedef EFI_COMMON_SECTION_HEADER EFI_SMM_DEPEX_SECTION;
 typedef EFI_COMMON_SECTION_HEADER2 EFI_SMM_DEPEX_SECTION2;
 
@@ -956,13 +956,13 @@ typedef struct {
   UINT16 BuildNumber;
   CHAR16 VersionString[1];
 } EFI_VERSION_SECTION2;
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiBootMode.h" 1
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiBootMode.h"
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiBootMode.h" 1
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiBootMode.h"
 typedef UINT32 EFI_BOOT_MODE;
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h" 1
-# 36 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h"
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h" 1
+# 36 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -977,7 +977,7 @@ typedef struct {
 
   UINT32 Reserved;
 } EFI_HOB_GENERIC_HEADER;
-# 60 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h"
+# 60 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -1142,9 +1142,9 @@ typedef struct {
 
 
 typedef UINT32 EFI_RESOURCE_TYPE;
-# 241 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h"
+# 241 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h"
 typedef UINT32 EFI_RESOURCE_ATTRIBUTE_TYPE;
-# 308 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h"
+# 308 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -1305,7 +1305,7 @@ typedef struct {
 
   EFI_HOB_GENERIC_HEADER Header;
 } EFI_HOB_MEMORY_POOL;
-# 476 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiHob.h"
+# 476 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiHob.h"
 typedef struct {
 
 
@@ -1341,15 +1341,15 @@ typedef union {
   EFI_HOB_UEFI_CAPSULE *Capsule;
   UINT8 *Raw;
 } EFI_PEI_HOB_POINTERS;
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiDependency.h" 1
-# 20 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiStatusCode.h" 1
-# 20 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiStatusCode.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h" 1
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h" 1
-# 56 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiDependency.h" 1
+# 20 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiStatusCode.h" 1
+# 20 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiStatusCode.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h" 1
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h" 1
+# 56 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT16 e_magic;
   UINT16 e_cblp;
@@ -1384,12 +1384,12 @@ typedef struct {
   UINT16 SizeOfOptionalHeader;
   UINT16 Characteristics;
 } EFI_IMAGE_FILE_HEADER;
-# 114 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 114 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 Size;
 } EFI_IMAGE_DATA_DIRECTORY;
-# 147 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 147 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
 
 
@@ -1429,7 +1429,7 @@ typedef struct {
   UINT32 NumberOfRvaAndSizes;
   EFI_IMAGE_DATA_DIRECTORY DataDirectory[16];
 } EFI_IMAGE_OPTIONAL_HEADER32;
-# 198 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 198 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
 
 
@@ -1490,7 +1490,7 @@ typedef struct {
   EFI_IMAGE_FILE_HEADER FileHeader;
   EFI_IMAGE_OPTIONAL_HEADER64 OptionalHeader;
 } EFI_IMAGE_NT_HEADERS64;
-# 294 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 294 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT8 Name[8];
   union {
@@ -1506,18 +1506,18 @@ typedef struct {
   UINT16 NumberOfLinenumbers;
   UINT32 Characteristics;
 } EFI_IMAGE_SECTION_HEADER;
-# 444 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 444 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 SymbolTableIndex;
   UINT16 Type;
 } EFI_IMAGE_RELOCATION;
-# 492 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 492 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 VirtualAddress;
   UINT32 SizeOfBlock;
 } EFI_IMAGE_BASE_RELOCATION;
-# 533 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 533 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   union {
     UINT32 SymbolTableIndex;
@@ -1525,7 +1525,7 @@ typedef struct {
   } Type;
   UINT16 Linenumber;
 } EFI_IMAGE_LINENUMBER;
-# 559 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 559 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT8 Name[16];
   UINT8 Date[12];
@@ -1535,7 +1535,7 @@ typedef struct {
   UINT8 Size[10];
   UINT8 EndHeader[2];
 } EFI_IMAGE_ARCHIVE_MEMBER_HEADER;
-# 581 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 581 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Characteristics;
   UINT32 TimeDateStamp;
@@ -1549,7 +1549,7 @@ typedef struct {
   UINT32 AddressOfNames;
   UINT32 AddressOfNameOrdinals;
 } EFI_IMAGE_EXPORT_DIRECTORY;
-# 605 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 605 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT16 Hint;
   UINT8 Name[1];
@@ -1565,7 +1565,7 @@ typedef struct {
     EFI_IMAGE_IMPORT_BY_NAME *AddressOfData;
   } u1;
 } EFI_IMAGE_THUNK_DATA;
-# 628 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 628 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Characteristics;
   UINT32 TimeDateStamp;
@@ -1587,7 +1587,7 @@ typedef struct {
   UINT32 RVA;
   UINT32 FileOffset;
 } EFI_IMAGE_DEBUG_DIRECTORY_ENTRY;
-# 657 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 657 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef struct {
   UINT32 Signature;
   UINT32 Unknown;
@@ -1721,7 +1721,7 @@ typedef struct {
   UINT64 ImageBase;
   EFI_IMAGE_DATA_DIRECTORY DataDirectory[2];
 } EFI_TE_IMAGE_HEADER;
-# 802 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
+# 802 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/IndustryStandard/PeImage.h"
 typedef union {
   EFI_IMAGE_NT_HEADERS32 Pe32;
   EFI_IMAGE_NT_HEADERS64 Pe32Plus;
@@ -1734,12 +1734,12 @@ typedef union {
   EFI_TE_IMAGE_HEADER *Te;
   EFI_IMAGE_OPTIONAL_HEADER_UNION *Union;
 } EFI_IMAGE_OPTIONAL_HEADER_PTR_UNION;
-# 20 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h" 2
+# 20 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h" 2
 
 typedef struct _EFI_DEBUG_SUPPORT_PROTOCOL EFI_DEBUG_SUPPORT_PROTOCOL;
-# 35 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 35 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef INTN EFI_EXCEPTION_TYPE;
-# 62 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 62 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT16 Fcw;
   UINT16 Fsw;
@@ -1808,7 +1808,7 @@ typedef struct {
   UINT32 Ecx;
   UINT32 Eax;
 } EFI_SYSTEM_CONTEXT_IA32;
-# 156 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 156 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT16 Fcw;
   UINT16 Fsw;
@@ -1886,7 +1886,7 @@ typedef struct {
   UINT64 R14;
   UINT64 R15;
 } EFI_SYSTEM_CONTEXT_X64;
-# 282 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 282 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
 
 
@@ -2038,7 +2038,7 @@ typedef struct {
 
   UINT64 IntNat;
 } EFI_SYSTEM_CONTEXT_IPF;
-# 456 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 456 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 R0;
   UINT64 R1;
@@ -2052,7 +2052,7 @@ typedef struct {
   UINT64 ControlFlags;
   UINT64 Ip;
 } EFI_SYSTEM_CONTEXT_EBC;
-# 490 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 490 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT32 R0;
   UINT32 R1;
@@ -2076,7 +2076,7 @@ typedef struct {
   UINT32 IFSR;
   UINT32 IFAR;
 } EFI_SYSTEM_CONTEXT_ARM;
-# 527 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 527 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
 
   UINT64 X0;
@@ -2152,7 +2152,7 @@ typedef struct {
   UINT64 ESR;
   UINT64 FAR;
 } EFI_SYSTEM_CONTEXT_AARCH64;
-# 645 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 645 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 X0;
   UINT64 X1;
@@ -2190,7 +2190,7 @@ typedef struct {
   UINT32 SSTATUS;
   UINT32 STVAL;
 } EFI_SYSTEM_CONTEXT_RISCV64;
-# 755 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 755 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef struct {
   UINT64 R0;
   UINT64 R1;
@@ -2249,7 +2249,7 @@ typedef union {
   EFI_SYSTEM_CONTEXT_RISCV64 *SystemContextRiscV64;
   EFI_SYSTEM_CONTEXT_LOONGARCH64 *SystemContextLoongArch64;
 } EFI_SYSTEM_CONTEXT;
-# 825 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 825 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 void
 ( *EFI_EXCEPTION_CALLBACK)(
@@ -2279,14 +2279,14 @@ typedef enum {
   IsaEbc = 0x0EBC,
   IsaAArch64 = 0xAA64
 } EFI_INSTRUCTION_SET_ARCHITECTURE;
-# 870 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 870 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_GET_MAXIMUM_PROCESSOR_INDEX)(
   EFI_DEBUG_SUPPORT_PROTOCOL *This,
   UINTN *MaxProcessorIndex
   );
-# 892 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 892 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_PERIODIC_CALLBACK)(
@@ -2294,7 +2294,7 @@ EFI_STATUS
   UINTN ProcessorIndex,
   EFI_PERIODIC_CALLBACK PeriodicCallback
   );
-# 916 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 916 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_REGISTER_EXCEPTION_CALLBACK)(
@@ -2303,7 +2303,7 @@ EFI_STATUS
   EFI_EXCEPTION_CALLBACK ExceptionCallback,
   EFI_EXCEPTION_TYPE ExceptionType
   );
-# 938 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Protocol/DebugSupport.h"
+# 938 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Protocol/DebugSupport.h"
 typedef
 EFI_STATUS
 ( *EFI_INVALIDATE_INSTRUCTION_CACHE)(
@@ -2330,15 +2330,15 @@ struct _EFI_DEBUG_SUPPORT_PROTOCOL {
 };
 
 extern EFI_GUID gEfiDebugSupportProtocolGuid;
-# 21 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiStatusCode.h" 2
+# 21 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiStatusCode.h" 2
 
 
 
 
 typedef UINT32 EFI_STATUS_CODE_TYPE;
-# 68 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiStatusCode.h"
+# 68 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiStatusCode.h"
 typedef UINT32 EFI_STATUS_CODE_VALUE;
-# 85 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiStatusCode.h"
+# 85 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiStatusCode.h"
 typedef struct {
 
 
@@ -2353,9 +2353,9 @@ typedef struct {
 
   EFI_GUID Type;
 } EFI_STATUS_CODE_DATA;
-# 21 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiS3BootScript.h" 1
-# 37 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiS3BootScript.h"
+# 21 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiS3BootScript.h" 1
+# 37 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiS3BootScript.h"
 typedef enum {
   EfiBootScriptWidthUint8,
   EfiBootScriptWidthUint16,
@@ -2371,8 +2371,8 @@ typedef enum {
   EfiBootScriptWidthFillUint64,
   EfiBootScriptWidthMaximum
 } EFI_BOOT_SCRIPT_WIDTH;
-# 22 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
-# 124 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 22 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h" 2
+# 124 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef struct {
 
 
@@ -2485,13 +2485,13 @@ typedef struct {
 
   CHAR8 *PcdName;
 } EFI_PCD_INFO;
-# 245 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 245 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef
 void
 ( *EFI_AP_PROCEDURE)(
   void *Buffer
   );
-# 261 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
+# 261 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiMultiPhase.h"
 typedef
 EFI_STATUS
 ( *EFI_AP_PROCEDURE2)(
@@ -2499,7 +2499,7 @@ EFI_STATUS
   );
 
 extern EFI_GUID gEfiMmCommunicateHeaderV3Guid;
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
 
 
 
@@ -2521,8 +2521,8 @@ typedef struct _EFI_PEI_SERVICES EFI_PEI_SERVICES;
 
 typedef struct _EFI_PEI_NOTIFY_DESCRIPTOR EFI_PEI_NOTIFY_DESCRIPTOR;
 
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h" 1
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h" 1
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef struct _EFI_PEI_CPU_IO_PPI EFI_PEI_CPU_IO_PPI;
 
 
@@ -2543,7 +2543,7 @@ typedef enum {
   EfiPeiCpuIoWidthFillUint64,
   EfiPeiCpuIoWidthMaximum
 } EFI_PEI_CPU_IO_PPI_WIDTH;
-# 55 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 55 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_CPU_IO_PPI_IO_MEM)(
@@ -2568,7 +2568,7 @@ typedef struct {
 
   EFI_PEI_CPU_IO_PPI_IO_MEM Write;
 } EFI_PEI_CPU_IO_PPI_ACCESS;
-# 91 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 91 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT8
 ( *EFI_PEI_CPU_IO_PPI_IO_READ8)(
@@ -2576,7 +2576,7 @@ UINT8
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 110 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 110 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT16
 ( *EFI_PEI_CPU_IO_PPI_IO_READ16)(
@@ -2584,7 +2584,7 @@ UINT16
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 129 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 129 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT32
 ( *EFI_PEI_CPU_IO_PPI_IO_READ32)(
@@ -2592,7 +2592,7 @@ UINT32
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 148 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 148 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT64
 ( *EFI_PEI_CPU_IO_PPI_IO_READ64)(
@@ -2600,7 +2600,7 @@ UINT64
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 166 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 166 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_IO_WRITE8)(
@@ -2609,7 +2609,7 @@ void
   UINT64 Address,
   UINT8 Data
   );
-# 185 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 185 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_IO_WRITE16)(
@@ -2618,7 +2618,7 @@ void
   UINT64 Address,
   UINT16 Data
   );
-# 204 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 204 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_IO_WRITE32)(
@@ -2627,7 +2627,7 @@ void
   UINT64 Address,
   UINT32 Data
   );
-# 223 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 223 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_IO_WRITE64)(
@@ -2636,7 +2636,7 @@ void
   UINT64 Address,
   UINT64 Data
   );
-# 243 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 243 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT8
 ( *EFI_PEI_CPU_IO_PPI_MEM_READ8)(
@@ -2644,7 +2644,7 @@ UINT8
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 262 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 262 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT16
 ( *EFI_PEI_CPU_IO_PPI_MEM_READ16)(
@@ -2652,7 +2652,7 @@ UINT16
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 281 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 281 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT32
 ( *EFI_PEI_CPU_IO_PPI_MEM_READ32)(
@@ -2660,7 +2660,7 @@ UINT32
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 300 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 300 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 UINT64
 ( *EFI_PEI_CPU_IO_PPI_MEM_READ64)(
@@ -2668,7 +2668,7 @@ UINT64
   const EFI_PEI_CPU_IO_PPI *This,
   UINT64 Address
   );
-# 318 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 318 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_MEM_WRITE8)(
@@ -2677,7 +2677,7 @@ void
   UINT64 Address,
   UINT8 Data
   );
-# 337 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 337 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_MEM_WRITE16)(
@@ -2686,7 +2686,7 @@ void
   UINT64 Address,
   UINT16 Data
   );
-# 356 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 356 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_MEM_WRITE32)(
@@ -2695,7 +2695,7 @@ void
   UINT64 Address,
   UINT32 Data
   );
-# 375 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/CpuIo.h"
+# 375 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/CpuIo.h"
 typedef
 void
 ( *EFI_PEI_CPU_IO_PPI_MEM_WRITE64)(
@@ -2742,11 +2742,11 @@ struct _EFI_PEI_CPU_IO_PPI {
 };
 
 extern EFI_GUID gEfiPeiCpuIoPpiInstalledGuid;
-# 39 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h" 1
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h" 1
-# 44 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 39 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h" 1
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h" 1
+# 44 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef struct {
   UINT64 Rbx;
   UINT64 Rsp;
@@ -2762,21 +2762,21 @@ typedef struct {
   UINT8 XmmBuffer[160];
   UINT64 Ssp;
 } BASE_LIBRARY_JUMP_BUFFER;
-# 600 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 600 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrnLenS (
   const CHAR16 *String,
   UINTN MaxSize
   );
-# 628 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 628 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrnSizeS (
   const CHAR16 *String,
   UINTN MaxSize
   );
-# 661 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 661 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrCpyS (
@@ -2784,7 +2784,7 @@ StrCpyS (
   UINTN DestMax,
   const CHAR16 *Source
   );
-# 698 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 698 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrnCpyS (
@@ -2793,7 +2793,7 @@ StrnCpyS (
   const CHAR16 *Source,
   UINTN Length
   );
-# 736 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 736 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrCatS (
@@ -2801,7 +2801,7 @@ StrCatS (
   UINTN DestMax,
   const CHAR16 *Source
   );
-# 776 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 776 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrnCatS (
@@ -2810,7 +2810,7 @@ StrnCatS (
   const CHAR16 *Source,
   UINTN Length
   );
-# 828 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 828 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrDecimalToUintnS (
@@ -2818,7 +2818,7 @@ StrDecimalToUintnS (
   CHAR16 **EndPointer ,
   UINTN *Data
   );
-# 879 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 879 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrDecimalToUint64S (
@@ -2826,7 +2826,7 @@ StrDecimalToUint64S (
   CHAR16 **EndPointer ,
   UINT64 *Data
   );
-# 935 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 935 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrHexToUintnS (
@@ -2834,7 +2834,7 @@ StrHexToUintnS (
   CHAR16 **EndPointer ,
   UINTN *Data
   );
-# 991 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 991 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrHexToUint64S (
@@ -2842,21 +2842,21 @@ StrHexToUint64S (
   CHAR16 **EndPointer ,
   UINT64 *Data
   );
-# 1013 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1013 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrnLenS (
   const CHAR8 *String,
   UINTN MaxSize
   );
-# 1039 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1039 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrnSizeS (
   const CHAR8 *String,
   UINTN MaxSize
   );
-# 1069 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1069 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrCpyS (
@@ -2864,7 +2864,7 @@ AsciiStrCpyS (
   UINTN DestMax,
   const CHAR8 *Source
   );
-# 1103 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1103 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrnCpyS (
@@ -2873,7 +2873,7 @@ AsciiStrnCpyS (
   const CHAR8 *Source,
   UINTN Length
   );
-# 1138 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1138 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrCatS (
@@ -2881,7 +2881,7 @@ AsciiStrCatS (
   UINTN DestMax,
   const CHAR8 *Source
   );
-# 1175 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1175 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrnCatS (
@@ -2890,7 +2890,7 @@ AsciiStrnCatS (
   const CHAR8 *Source,
   UINTN Length
   );
-# 1225 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1225 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrDecimalToUintnS (
@@ -2898,7 +2898,7 @@ AsciiStrDecimalToUintnS (
   CHAR8 **EndPointer ,
   UINTN *Data
   );
-# 1274 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1274 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrDecimalToUint64S (
@@ -2906,7 +2906,7 @@ AsciiStrDecimalToUint64S (
   CHAR8 **EndPointer ,
   UINT64 *Data
   );
-# 1327 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1327 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrHexToUintnS (
@@ -2914,7 +2914,7 @@ AsciiStrHexToUintnS (
   CHAR8 **EndPointer ,
   UINTN *Data
   );
-# 1380 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1380 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrHexToUint64S (
@@ -2922,26 +2922,26 @@ AsciiStrHexToUint64S (
   CHAR8 **EndPointer ,
   UINT64 *Data
   );
-# 1405 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1405 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrLen (
   const CHAR16 *String
   );
-# 1429 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1429 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrSize (
   const CHAR16 *String
   );
-# 1463 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1463 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 StrCmp (
   const CHAR16 *FirstString,
   const CHAR16 *SecondString
   );
-# 1502 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1502 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 StrnCmp (
@@ -2949,38 +2949,38 @@ StrnCmp (
   const CHAR16 *SecondString,
   UINTN Length
   );
-# 1535 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1535 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16 *
 
 StrStr (
   const CHAR16 *String,
   const CHAR16 *SearchString
   );
-# 1576 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1576 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrDecimalToUintn (
   const CHAR16 *String
   );
-# 1616 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1616 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 StrDecimalToUint64 (
   const CHAR16 *String
   );
-# 1657 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1657 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 StrHexToUintn (
   const CHAR16 *String
   );
-# 1698 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1698 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 StrHexToUint64 (
   const CHAR16 *String
   );
-# 1754 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1754 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrToIpv6Address (
@@ -2989,7 +2989,7 @@ StrToIpv6Address (
   IPv6_ADDRESS *Address,
   UINT8 *PrefixLength
   );
-# 1804 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1804 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrToIpv4Address (
@@ -2998,14 +2998,14 @@ StrToIpv4Address (
   IPv4_ADDRESS *Address,
   UINT8 *PrefixLength
   );
-# 1857 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1857 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrToGuid (
   const CHAR16 *String,
   GUID *Guid
   );
-# 1897 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1897 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 StrHexToBytes (
@@ -3014,7 +3014,7 @@ StrHexToBytes (
   UINT8 *Buffer,
   UINTN MaxBufferSize
   );
-# 1946 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1946 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 UnicodeStrToAsciiStrS (
@@ -3022,7 +3022,7 @@ UnicodeStrToAsciiStrS (
   CHAR8 *Destination,
   UINTN DestMax
   );
-# 1997 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 1997 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 UnicodeStrnToAsciiStrS (
@@ -3032,33 +3032,33 @@ UnicodeStrnToAsciiStrS (
   UINTN DestMax,
   UINTN *DestinationLength
   );
-# 2024 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2024 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrLen (
   const CHAR8 *String
   );
-# 2047 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2047 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrSize (
   const CHAR8 *String
   );
-# 2079 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2079 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 AsciiStrCmp (
   const CHAR8 *FirstString,
   const CHAR8 *SecondString
   );
-# 2115 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2115 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 AsciiStriCmp (
   const CHAR8 *FirstString,
   const CHAR8 *SecondString
   );
-# 2152 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2152 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 AsciiStrnCmp (
@@ -3066,38 +3066,38 @@ AsciiStrnCmp (
   const CHAR8 *SecondString,
   UINTN Length
   );
-# 2184 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2184 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR8 *
 
 AsciiStrStr (
   const CHAR8 *String,
   const CHAR8 *SearchString
   );
-# 2221 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2221 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrDecimalToUintn (
   const CHAR8 *String
   );
-# 2257 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2257 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsciiStrDecimalToUint64 (
   const CHAR8 *String
   );
-# 2297 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2297 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsciiStrHexToUintn (
   const CHAR8 *String
   );
-# 2337 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2337 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsciiStrHexToUint64 (
   const CHAR8 *String
   );
-# 2391 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2391 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrToIpv6Address (
@@ -3106,7 +3106,7 @@ AsciiStrToIpv6Address (
   IPv6_ADDRESS *Address,
   UINT8 *PrefixLength
   );
-# 2439 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2439 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrToIpv4Address (
@@ -3115,14 +3115,14 @@ AsciiStrToIpv4Address (
   IPv4_ADDRESS *Address,
   UINT8 *PrefixLength
   );
-# 2488 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2488 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrToGuid (
   const CHAR8 *String,
   GUID *Guid
   );
-# 2526 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2526 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrHexToBytes (
@@ -3131,7 +3131,7 @@ AsciiStrHexToBytes (
   UINT8 *Buffer,
   UINTN MaxBufferSize
   );
-# 2571 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2571 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrToUnicodeStrS (
@@ -3139,7 +3139,7 @@ AsciiStrToUnicodeStrS (
   CHAR16 *Destination,
   UINTN DestMax
   );
-# 2621 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2621 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 AsciiStrnToUnicodeStrS (
@@ -3149,19 +3149,19 @@ AsciiStrnToUnicodeStrS (
   UINTN DestMax,
   UINTN *DestinationLength
   );
-# 2646 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2646 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16
 
 CharToUpper (
   CHAR16 Char
   );
-# 2665 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2665 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR8
 
 AsciiCharToUpper (
   CHAR8 Chr
   );
-# 2690 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2690 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 Base64Encode (
@@ -3170,7 +3170,7 @@ Base64Encode (
   CHAR8 *Destination ,
   UINTN *DestinationSize
   );
-# 2781 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2781 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 RETURN_STATUS
 
 Base64Decode (
@@ -3179,118 +3179,118 @@ Base64Decode (
   UINT8 *Destination ,
   UINTN *DestinationSize
   );
-# 2803 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2803 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 DecimalToBcd8 (
   UINT8 Value
   );
-# 2823 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2823 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BcdToDecimal8 (
   UINT8 Value
   );
-# 2841 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2841 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 PathRemoveLastItem (
   CHAR16 *Path
   );
-# 2860 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2860 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 CHAR16 *
 
 PathCleanUpDirectories (
   CHAR16 *Path
   );
-# 2932 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2932 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 IsNodeInList (
   const LIST_ENTRY *FirstEntry,
   const LIST_ENTRY *SecondEntry
   );
-# 2955 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2955 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 InitializeListHead (
   LIST_ENTRY *ListHead
   );
-# 2983 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 2983 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 InsertHeadList (
   LIST_ENTRY *ListHead,
   LIST_ENTRY *Entry
   );
-# 3012 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3012 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 InsertTailList (
   LIST_ENTRY *ListHead,
   LIST_ENTRY *Entry
   );
-# 3039 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3039 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 GetFirstNode (
   const LIST_ENTRY *List
   );
-# 3066 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3066 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 GetNextNode (
   const LIST_ENTRY *List,
   const LIST_ENTRY *Node
   );
-# 3094 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3094 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 GetPreviousNode (
   const LIST_ENTRY *List,
   const LIST_ENTRY *Node
   );
-# 3120 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3120 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 IsListEmpty (
   const LIST_ENTRY *ListHead
   );
-# 3152 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3152 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 IsNull (
   const LIST_ENTRY *List,
   const LIST_ENTRY *Node
   );
-# 3182 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3182 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 IsNodeAtEnd (
   const LIST_ENTRY *List,
   const LIST_ENTRY *Node
   );
-# 3215 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3215 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 SwapListEntries (
   LIST_ENTRY *FirstEntry,
   LIST_ENTRY *SecondEntry
   );
-# 3243 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3243 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 LIST_ENTRY *
 
 RemoveEntryList (
   const LIST_ENTRY *Entry
   );
-# 3263 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3263 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef
 INTN
 ( *BASE_SORT_COMPARE)(
   const void *Buffer1,
   const void *Buffer2
   );
-# 3293 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3293 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 QuickSort (
@@ -3300,145 +3300,145 @@ QuickSort (
   BASE_SORT_COMPARE CompareFunction,
   void *BufferOneElement
   );
-# 3318 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3318 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 LShiftU64 (
   UINT64 Operand,
   UINTN Count
   );
-# 3340 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3340 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 RShiftU64 (
   UINT64 Operand,
   UINTN Count
   );
-# 3362 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3362 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 ARShiftU64 (
   UINT64 Operand,
   UINTN Count
   );
-# 3385 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3385 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 LRotU32 (
   UINT32 Operand,
   UINTN Count
   );
-# 3408 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3408 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 RRotU32 (
   UINT32 Operand,
   UINTN Count
   );
-# 3431 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3431 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 LRotU64 (
   UINT64 Operand,
   UINTN Count
   );
-# 3454 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3454 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 RRotU64 (
   UINT64 Operand,
   UINTN Count
   );
-# 3474 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3474 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 LowBitSet32 (
   UINT32 Operand
   );
-# 3494 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3494 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 LowBitSet64 (
   UINT64 Operand
   );
-# 3514 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3514 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 HighBitSet32 (
   UINT32 Operand
   );
-# 3534 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3534 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INTN
 
 HighBitSet64 (
   UINT64 Operand
   );
-# 3553 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3553 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 GetPowerOfTwo32 (
   UINT32 Operand
   );
-# 3572 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3572 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 GetPowerOfTwo64 (
   UINT64 Operand
   );
-# 3590 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3590 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 SwapBytes16 (
   UINT16 Value
   );
-# 3608 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3608 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 SwapBytes32 (
   UINT32 Value
   );
-# 3626 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3626 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 SwapBytes64 (
   UINT64 Value
   );
-# 3646 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3646 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 MultU64x32 (
   UINT64 Multiplicand,
   UINT32 Multiplier
   );
-# 3667 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3667 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 MultU64x64 (
   UINT64 Multiplicand,
   UINT64 Multiplier
   );
-# 3688 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3688 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INT64
 
 MultS64x64 (
   INT64 Multiplicand,
   INT64 Multiplier
   );
-# 3711 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3711 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 DivU64x32 (
   UINT64 Dividend,
   UINT32 Divisor
   );
-# 3734 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3734 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 ModU64x32 (
   UINT64 Dividend,
   UINT32 Divisor
   );
-# 3760 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3760 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 DivU64x32Remainder (
@@ -3446,7 +3446,7 @@ DivU64x32Remainder (
   UINT32 Divisor,
   UINT32 *Remainder
   );
-# 3787 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3787 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 DivU64x64Remainder (
@@ -3454,7 +3454,7 @@ DivU64x64Remainder (
   UINT64 Divisor,
   UINT64 *Remainder
   );
-# 3818 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3818 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 INT64
 
 DivS64x64Remainder (
@@ -3462,59 +3462,59 @@ DivS64x64Remainder (
   INT64 Divisor,
   INT64 *Remainder
   );
-# 3839 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3839 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 ReadUnaligned16 (
   const void *Buffer
   );
-# 3860 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3860 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 WriteUnaligned16 (
   void *Buffer,
   UINT16 Value
   );
-# 3880 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3880 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 ReadUnaligned24 (
   const void *Buffer
   );
-# 3901 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3901 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 WriteUnaligned24 (
   void *Buffer,
   UINT32 Value
   );
-# 3921 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3921 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 ReadUnaligned32 (
   const void *Buffer
   );
-# 3942 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3942 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 WriteUnaligned32 (
   void *Buffer,
   UINT32 Value
   );
-# 3962 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3962 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 ReadUnaligned64 (
   const void *Buffer
   );
-# 3983 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 3983 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 WriteUnaligned64 (
   void *Buffer,
   UINT64 Value
   );
-# 4013 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4013 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldRead8 (
@@ -3522,7 +3522,7 @@ BitFieldRead8 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4044 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4044 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldWrite8 (
@@ -3531,7 +3531,7 @@ BitFieldWrite8 (
   UINTN EndBit,
   UINT8 Value
   );
-# 4077 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4077 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldOr8 (
@@ -3540,7 +3540,7 @@ BitFieldOr8 (
   UINTN EndBit,
   UINT8 OrData
   );
-# 4110 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4110 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldAnd8 (
@@ -3549,7 +3549,7 @@ BitFieldAnd8 (
   UINTN EndBit,
   UINT8 AndData
   );
-# 4146 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4146 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldAndThenOr8 (
@@ -3559,7 +3559,7 @@ BitFieldAndThenOr8 (
   UINT8 AndData,
   UINT8 OrData
   );
-# 4175 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4175 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 BitFieldRead16 (
@@ -3567,7 +3567,7 @@ BitFieldRead16 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4206 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4206 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 BitFieldWrite16 (
@@ -3576,7 +3576,7 @@ BitFieldWrite16 (
   UINTN EndBit,
   UINT16 Value
   );
-# 4239 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4239 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 BitFieldOr16 (
@@ -3585,7 +3585,7 @@ BitFieldOr16 (
   UINTN EndBit,
   UINT16 OrData
   );
-# 4272 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4272 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 BitFieldAnd16 (
@@ -3594,7 +3594,7 @@ BitFieldAnd16 (
   UINTN EndBit,
   UINT16 AndData
   );
-# 4308 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4308 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 BitFieldAndThenOr16 (
@@ -3604,7 +3604,7 @@ BitFieldAndThenOr16 (
   UINT16 AndData,
   UINT16 OrData
   );
-# 4337 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4337 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 BitFieldRead32 (
@@ -3612,7 +3612,7 @@ BitFieldRead32 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4368 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4368 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 BitFieldWrite32 (
@@ -3621,7 +3621,7 @@ BitFieldWrite32 (
   UINTN EndBit,
   UINT32 Value
   );
-# 4401 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4401 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 BitFieldOr32 (
@@ -3630,7 +3630,7 @@ BitFieldOr32 (
   UINTN EndBit,
   UINT32 OrData
   );
-# 4434 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4434 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 BitFieldAnd32 (
@@ -3639,7 +3639,7 @@ BitFieldAnd32 (
   UINTN EndBit,
   UINT32 AndData
   );
-# 4470 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4470 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 BitFieldAndThenOr32 (
@@ -3649,7 +3649,7 @@ BitFieldAndThenOr32 (
   UINT32 AndData,
   UINT32 OrData
   );
-# 4499 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4499 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 BitFieldRead64 (
@@ -3657,7 +3657,7 @@ BitFieldRead64 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4530 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4530 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 BitFieldWrite64 (
@@ -3666,7 +3666,7 @@ BitFieldWrite64 (
   UINTN EndBit,
   UINT64 Value
   );
-# 4563 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4563 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 BitFieldOr64 (
@@ -3675,7 +3675,7 @@ BitFieldOr64 (
   UINTN EndBit,
   UINT64 OrData
   );
-# 4596 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4596 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 BitFieldAnd64 (
@@ -3684,7 +3684,7 @@ BitFieldAnd64 (
   UINTN EndBit,
   UINT64 AndData
   );
-# 4632 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4632 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 BitFieldAndThenOr64 (
@@ -3694,7 +3694,7 @@ BitFieldAndThenOr64 (
   UINT64 AndData,
   UINT64 OrData
   );
-# 4662 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4662 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldCountOnes32 (
@@ -3702,7 +3702,7 @@ BitFieldCountOnes32 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4690 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4690 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 BitFieldCountOnes64 (
@@ -3710,84 +3710,84 @@ BitFieldCountOnes64 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 4768 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4768 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 ConvertGuidToUuid (
   GUID *FromGuid,
   GUID *ToUuid
   );
-# 4786 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4786 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 ConvertUuidToGuid (
   GUID *FromUuid,
   GUID *ToGuid
   );
-# 4815 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4815 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 CalculateSum8 (
   const UINT8 *Buffer,
   UINTN Length
   );
-# 4840 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4840 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT8
 
 CalculateCheckSum8 (
   const UINT8 *Buffer,
   UINTN Length
   );
-# 4866 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4866 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 CalculateSum16 (
   const UINT16 *Buffer,
   UINTN Length
   );
-# 4893 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4893 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 CalculateCheckSum16 (
   const UINT16 *Buffer,
   UINTN Length
   );
-# 4919 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4919 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 CalculateSum32 (
   const UINT32 *Buffer,
   UINTN Length
   );
-# 4946 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4946 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 CalculateCheckSum32 (
   const UINT32 *Buffer,
   UINTN Length
   );
-# 4972 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4972 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 CalculateSum64 (
   const UINT64 *Buffer,
   UINTN Length
   );
-# 4999 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 4999 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 CalculateCheckSum64 (
   const UINT64 *Buffer,
   UINTN Length
   );
-# 5019 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5019 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 CalculateCrc32 (
   void *Buffer,
   UINTN Length
   );
-# 5035 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5035 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 CalculateCrc16Ansi (
@@ -3795,7 +3795,7 @@ CalculateCrc16Ansi (
   UINTN Length,
   UINT16 InitialValue
   );
-# 5057 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5057 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 CalculateCrc32c (
@@ -3803,7 +3803,7 @@ CalculateCrc32c (
   UINTN Length,
   UINT32 InitialValue
   );
-# 5074 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5074 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 CalculateCrc16CcittF (
@@ -3811,27 +3811,27 @@ CalculateCrc16CcittF (
   UINTN Length,
   UINT16 InitialValue
   );
-# 5092 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5092 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef
 void
 ( *SWITCH_STACK_ENTRY_POINT)(
   void *Context1 ,
   void *Context2
   );
-# 5106 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5106 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 MemoryFence (
   void
   );
-# 5133 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5133 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 __attribute__((returns_twice))
 UINTN
 
 SetJump (
   BASE_LIBRARY_JUMP_BUFFER *JumpBuffer
   );
-# 5156 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5156 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 LongJump (
@@ -3858,7 +3858,7 @@ void
 DisableInterrupts (
   void
   );
-# 5191 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5191 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 SaveAndDisableInterrupts (
@@ -3875,25 +3875,25 @@ void
 EnableDisableInterrupts (
   void
   );
-# 5218 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5218 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 GetInterruptState (
   void
   );
-# 5238 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5238 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 SetInterruptState (
   BOOLEAN InterruptState
   );
-# 5251 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5251 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 CpuPause (
   void
   );
-# 5286 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5286 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 SwitchStack (
@@ -3903,25 +3903,25 @@ SwitchStack (
   void *NewStack,
   ...
   );
-# 5303 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5303 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 CpuBreakpoint (
   void
   );
-# 5318 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5318 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 CpuDeadLoop (
   void
   );
-# 5331 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5331 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 SpeculationBarrier (
   void
   );
-# 5351 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5351 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 TdCall (
@@ -3931,7 +3931,7 @@ TdCall (
   UINT64 Arg3,
   void *Results
   );
-# 5376 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5376 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 TdVmCall (
@@ -3975,7 +3975,7 @@ typedef enum {
   PvalidatePageSize4K = 0,
   PvalidatePageSize2MB,
 } PVALIDATE_PAGE_SIZE;
-# 5452 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5452 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmPvalidate (
@@ -3983,7 +3983,7 @@ AsmPvalidate (
   BOOLEAN Validate,
   PHYSICAL_ADDRESS Address
   );
-# 5487 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5487 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmRmpAdjust (
@@ -3991,7 +3991,7 @@ AsmRmpAdjust (
   UINT64 Rcx,
   UINT64 Rdx
   );
-# 5502 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5502 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef union {
   struct {
     UINT32 CF : 1;
@@ -4140,7 +4140,7 @@ typedef struct {
   UINT16 Limit;
   UINTN Base;
 } IA32_DESCRIPTOR;
-# 5746 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5746 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef union {
   struct {
     UINT32 OffsetLow : 16;
@@ -4281,11 +4281,11 @@ typedef struct {
   UINT32 RealModeBufferSize;
   UINT32 ThunkAttributes;
 } THUNK_CONTEXT;
-# 5903 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5903 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 typedef void (X86_ASSEMBLY_PATCH_LABEL) (
   void
   );
-# 5932 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5932 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmCpuid (
@@ -4295,7 +4295,7 @@ AsmCpuid (
   UINT32 *Ecx ,
   UINT32 *Edx
   );
-# 5974 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5974 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmCpuidEx (
@@ -4306,46 +4306,46 @@ AsmCpuidEx (
   UINT32 *Ecx ,
   UINT32 *Edx
   );
-# 5992 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 5992 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmDisableCache (
   void
   );
-# 6005 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6005 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmEnableCache (
   void
   );
-# 6025 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6025 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmReadMsr32 (
   UINT32 Index
   );
-# 6048 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6048 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmWriteMsr32 (
   UINT32 Index,
   UINT32 Value
   );
-# 6074 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6074 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrOr32 (
   UINT32 Index,
   UINT32 OrData
   );
-# 6100 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6100 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrAnd32 (
   UINT32 Index,
   UINT32 AndData
   );
-# 6129 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6129 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrAndThenOr32 (
@@ -4353,7 +4353,7 @@ AsmMsrAndThenOr32 (
   UINT32 AndData,
   UINT32 OrData
   );
-# 6159 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6159 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrBitFieldRead32 (
@@ -4361,7 +4361,7 @@ AsmMsrBitFieldRead32 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 6192 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6192 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrBitFieldWrite32 (
@@ -4370,7 +4370,7 @@ AsmMsrBitFieldWrite32 (
   UINTN EndBit,
   UINT32 Value
   );
-# 6228 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6228 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrBitFieldOr32 (
@@ -4379,7 +4379,7 @@ AsmMsrBitFieldOr32 (
   UINTN EndBit,
   UINT32 OrData
   );
-# 6264 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6264 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrBitFieldAnd32 (
@@ -4388,7 +4388,7 @@ AsmMsrBitFieldAnd32 (
   UINTN EndBit,
   UINT32 AndData
   );
-# 6304 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6304 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmMsrBitFieldAndThenOr32 (
@@ -4398,34 +4398,34 @@ AsmMsrBitFieldAndThenOr32 (
   UINT32 AndData,
   UINT32 OrData
   );
-# 6328 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6328 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMsr64 (
   UINT32 Index
   );
-# 6351 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6351 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmWriteMsr64 (
   UINT32 Index,
   UINT64 Value
   );
-# 6376 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6376 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrOr64 (
   UINT32 Index,
   UINT64 OrData
   );
-# 6401 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6401 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrAnd64 (
   UINT32 Index,
   UINT64 AndData
   );
-# 6429 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6429 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrAndThenOr64 (
@@ -4433,7 +4433,7 @@ AsmMsrAndThenOr64 (
   UINT64 AndData,
   UINT64 OrData
   );
-# 6459 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6459 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrBitFieldRead64 (
@@ -4441,7 +4441,7 @@ AsmMsrBitFieldRead64 (
   UINTN StartBit,
   UINTN EndBit
   );
-# 6491 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6491 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrBitFieldWrite64 (
@@ -4450,7 +4450,7 @@ AsmMsrBitFieldWrite64 (
   UINTN EndBit,
   UINT64 Value
   );
-# 6527 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6527 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrBitFieldOr64 (
@@ -4459,7 +4459,7 @@ AsmMsrBitFieldOr64 (
   UINTN EndBit,
   UINT64 OrData
   );
-# 6563 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6563 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrBitFieldAnd64 (
@@ -4468,7 +4468,7 @@ AsmMsrBitFieldAnd64 (
   UINTN EndBit,
   UINT64 AndData
   );
-# 6602 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6602 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmMsrBitFieldAndThenOr64 (
@@ -4478,355 +4478,355 @@ AsmMsrBitFieldAndThenOr64 (
   UINT64 AndData,
   UINT64 OrData
   );
-# 6622 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6622 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadEflags (
   void
   );
-# 6638 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6638 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadCr0 (
   void
   );
-# 6654 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6654 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadCr2 (
   void
   );
-# 6670 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6670 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadCr3 (
   void
   );
-# 6686 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6686 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadCr4 (
   void
   );
-# 6703 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6703 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteCr0 (
   UINTN Cr0
   );
-# 6720 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6720 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteCr2 (
   UINTN Cr2
   );
-# 6737 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6737 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteCr3 (
   UINTN Cr3
   );
-# 6754 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6754 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteCr4 (
   UINTN Cr4
   );
-# 6770 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6770 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr0 (
   void
   );
-# 6786 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6786 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr1 (
   void
   );
-# 6802 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6802 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr2 (
   void
   );
-# 6818 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6818 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr3 (
   void
   );
-# 6834 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6834 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr4 (
   void
   );
-# 6850 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6850 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr5 (
   void
   );
-# 6866 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6866 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr6 (
   void
   );
-# 6882 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6882 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmReadDr7 (
   void
   );
-# 6899 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6899 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr0 (
   UINTN Dr0
   );
-# 6916 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6916 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr1 (
   UINTN Dr1
   );
-# 6933 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6933 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr2 (
   UINTN Dr2
   );
-# 6950 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6950 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr3 (
   UINTN Dr3
   );
-# 6967 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6967 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr4 (
   UINTN Dr4
   );
-# 6984 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 6984 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr5 (
   UINTN Dr5
   );
-# 7001 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7001 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr6 (
   UINTN Dr6
   );
-# 7018 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7018 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmWriteDr7 (
   UINTN Dr7
   );
-# 7033 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7033 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadCs (
   void
   );
-# 7048 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7048 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadDs (
   void
   );
-# 7063 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7063 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadEs (
   void
   );
-# 7078 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7078 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadFs (
   void
   );
-# 7093 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7093 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadGs (
   void
   );
-# 7108 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7108 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadSs (
   void
   );
-# 7123 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7123 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadTr (
   void
   );
-# 7140 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7140 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmReadGdtr (
   IA32_DESCRIPTOR *Gdtr
   );
-# 7157 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7157 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteGdtr (
   const IA32_DESCRIPTOR *Gdtr
   );
-# 7174 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7174 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmReadIdtr (
   IA32_DESCRIPTOR *Idtr
   );
-# 7191 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7191 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteIdtr (
   const IA32_DESCRIPTOR *Idtr
   );
-# 7206 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7206 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT16
 
 AsmReadLdtr (
   void
   );
-# 7221 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7221 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteLdtr (
   UINT16 Ldtr
   );
-# 7240 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7240 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmFxSave (
   IA32_FX_BUFFER *Buffer
   );
-# 7260 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7260 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmFxRestore (
   const IA32_FX_BUFFER *Buffer
   );
-# 7275 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7275 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm0 (
   void
   );
-# 7290 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7290 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm1 (
   void
   );
-# 7305 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7305 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm2 (
   void
   );
-# 7320 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7320 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm3 (
   void
   );
-# 7335 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7335 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm4 (
   void
   );
-# 7350 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7350 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm5 (
   void
   );
-# 7365 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7365 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm6 (
   void
   );
-# 7380 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7380 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadMm7 (
   void
   );
-# 7395 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7395 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm0 (
   UINT64 Value
   );
-# 7410 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7410 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm1 (
   UINT64 Value
   );
-# 7425 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7425 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm2 (
   UINT64 Value
   );
-# 7440 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7440 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm3 (
   UINT64 Value
   );
-# 7455 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7455 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm4 (
   UINT64 Value
   );
-# 7470 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7470 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm5 (
   UINT64 Value
   );
-# 7485 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7485 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm6 (
   UINT64 Value
   );
-# 7500 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7500 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWriteMm7 (
   UINT64 Value
   );
-# 7515 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7515 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadTsc (
   void
   );
-# 7532 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7532 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmReadPmc (
   UINT32 Index
   );
-# 7554 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7554 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmMonitor (
@@ -4834,32 +4834,32 @@ AsmMonitor (
   UINTN Ecx,
   UINTN Edx
   );
-# 7576 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7576 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINTN
 
 AsmMwait (
   UINTN Eax,
   UINTN Ecx
   );
-# 7590 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7590 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmWbinvd (
   void
   );
-# 7603 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7603 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmInvd (
   void
   );
-# 7624 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7624 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void *
 
 AsmFlushCacheLine (
   void *LinearAddress
   );
-# 7667 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7667 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmEnablePaging32 (
@@ -4868,7 +4868,7 @@ AsmEnablePaging32 (
   void *Context2 ,
   void *NewStack
   );
-# 7710 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7710 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmDisablePaging32 (
@@ -4877,7 +4877,7 @@ AsmDisablePaging32 (
   void *Context2 ,
   void *NewStack
   );
-# 7751 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7751 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmEnablePaging64 (
@@ -4887,7 +4887,7 @@ AsmEnablePaging64 (
   UINT64 Context2 ,
   UINT64 NewStack
   );
-# 7791 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7791 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmDisablePaging64 (
@@ -4897,44 +4897,44 @@ AsmDisablePaging64 (
   UINT32 Context2 ,
   UINT32 NewStack
   );
-# 7826 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7826 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmGetThunk16Properties (
   UINT32 *RealModeBufferSize,
   UINT32 *ExtraStackSize
   );
-# 7847 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7847 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmPrepareThunk16 (
   THUNK_CONTEXT *ThunkContext
   );
-# 7906 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7906 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmThunk16 (
   THUNK_CONTEXT *ThunkContext
   );
-# 7932 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7932 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmPrepareAndThunk16 (
   THUNK_CONTEXT *ThunkContext
   );
-# 7949 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7949 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 AsmRdRand16 (
   UINT16 *Rand
   );
-# 7966 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7966 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 AsmRdRand32 (
   UINT32 *Rand
   );
-# 7983 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 7983 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 BOOLEAN
 
 AsmRdRand64 (
@@ -4951,26 +4951,26 @@ void
 AsmWriteTr (
   UINT16 Selector
   );
-# 8007 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8007 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmLfence (
   void
   );
-# 8023 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8023 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmXGetBv (
   UINT32 Index
   );
-# 8046 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8046 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT64
 
 AsmXSetBv (
   UINT32 Index,
   UINT64 Value
   );
-# 8060 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8060 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 AsmVmgExit (
@@ -4994,13 +4994,13 @@ typedef struct {
   UINT64 R9Out;
   UINT8 *CallPending;
 } SVSM_CALL_DATA;
-# 8099 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8099 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 UINT32
 
 AsmVmgExitSvsm (
   SVSM_CALL_DATA *SvsmCallData
   );
-# 8139 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/BaseLib.h"
+# 8139 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/BaseLib.h"
 void
 
 PatchInstructionX86 (
@@ -5008,13 +5008,13 @@ PatchInstructionX86 (
   UINT64 PatchValue,
   UINTN ValueSize
   );
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h" 2
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h" 2
 
 
 
 
 typedef struct _EFI_PEI_PCI_CFG2_PPI EFI_PEI_PCI_CFG2_PPI;
-# 35 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h"
+# 35 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h"
 typedef enum {
 
 
@@ -5064,7 +5064,7 @@ typedef struct {
 
   UINT32 ExtendedRegister;
 } EFI_PEI_PCI_CFG_PPI_PCI_ADDRESS;
-# 109 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h"
+# 109 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_PCI_CFG2_PPI_IO)(
@@ -5074,7 +5074,7 @@ EFI_STATUS
   UINT64 Address,
   void *Buffer
   );
-# 149 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Ppi/PciCfg2.h"
+# 149 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Ppi/PciCfg2.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_PCI_CFG2_PPI_RW)(
@@ -5101,15 +5101,15 @@ struct _EFI_PEI_PCI_CFG2_PPI {
 };
 
 extern EFI_GUID gEfiPciCfg2PpiGuid;
-# 40 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
-# 52 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 40 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h" 2
+# 52 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEIM_ENTRY_POINT2)(
   EFI_PEI_FILE_HANDLE FileHandle,
   const EFI_PEI_SERVICES **PeiServices
   );
-# 69 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 69 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEIM_NOTIFY_ENTRY_POINT)(
@@ -5117,7 +5117,7 @@ EFI_STATUS
   EFI_PEI_NOTIFY_DESCRIPTOR *NotifyDescriptor,
   void *Ppi
   );
-# 90 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 90 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef struct {
 
 
@@ -5167,14 +5167,14 @@ typedef union {
 
   EFI_PEI_PPI_DESCRIPTOR Ppi;
 } EFI_PEI_DESCRIPTOR;
-# 157 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 157 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_INSTALL_PPI)(
   const EFI_PEI_SERVICES **PeiServices,
   const EFI_PEI_PPI_DESCRIPTOR *PpiList
   );
-# 182 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 182 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_REINSTALL_PPI)(
@@ -5182,7 +5182,7 @@ EFI_STATUS
   const EFI_PEI_PPI_DESCRIPTOR *OldPpi,
   const EFI_PEI_PPI_DESCRIPTOR *NewPpi
   );
-# 203 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 203 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_LOCATE_PPI)(
@@ -5192,35 +5192,35 @@ EFI_STATUS
   EFI_PEI_PPI_DESCRIPTOR **PpiDescriptor ,
   void **Ppi
   );
-# 228 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 228 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_NOTIFY_PPI)(
   const EFI_PEI_SERVICES **PeiServices,
   const EFI_PEI_NOTIFY_DESCRIPTOR *NotifyList
   );
-# 244 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 244 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_GET_BOOT_MODE)(
   const EFI_PEI_SERVICES **PeiServices,
   EFI_BOOT_MODE *BootMode
   );
-# 260 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 260 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_SET_BOOT_MODE)(
   const EFI_PEI_SERVICES **PeiServices,
   EFI_BOOT_MODE BootMode
   );
-# 277 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 277 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_GET_HOB_LIST)(
   const EFI_PEI_SERVICES **PeiServices,
   void **HobList
   );
-# 296 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 296 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_CREATE_HOB)(
@@ -5229,7 +5229,7 @@ EFI_STATUS
   UINT16 Length,
   void **Hob
   );
-# 324 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 324 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_FIND_NEXT_VOLUME2)(
@@ -5237,7 +5237,7 @@ EFI_STATUS
   UINTN Instance,
   EFI_PEI_FV_HANDLE *VolumeHandle
   );
-# 353 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 353 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_FIND_NEXT_FILE2)(
@@ -5246,7 +5246,7 @@ EFI_STATUS
   const EFI_PEI_FV_HANDLE FvHandle,
   EFI_PEI_FILE_HANDLE *FileHandle
   );
-# 381 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 381 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_FIND_SECTION_DATA2)(
@@ -5255,7 +5255,7 @@ EFI_STATUS
   EFI_PEI_FILE_HANDLE FileHandle,
   void **SectionData
   );
-# 411 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 411 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_FIND_SECTION_DATA3)(
@@ -5266,7 +5266,7 @@ EFI_STATUS
   void **SectionData,
   UINT32 *AuthenticationStatus
   );
-# 434 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 434 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_INSTALL_PEI_MEMORY)(
@@ -5274,7 +5274,7 @@ EFI_STATUS
   EFI_PHYSICAL_ADDRESS MemoryBegin,
   UINT64 MemoryLength
   );
-# 464 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 464 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_ALLOCATE_PAGES)(
@@ -5283,7 +5283,7 @@ EFI_STATUS
   UINTN Pages,
   EFI_PHYSICAL_ADDRESS *Memory
   );
-# 486 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 486 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FREE_PAGES)(
@@ -5291,7 +5291,7 @@ EFI_STATUS
   EFI_PHYSICAL_ADDRESS Memory,
   UINTN Pages
   );
-# 506 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 506 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_ALLOCATE_POOL)(
@@ -5299,7 +5299,7 @@ EFI_STATUS
   UINTN Size,
   void **Buffer
   );
-# 522 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 522 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 void
 ( *EFI_PEI_COPY_MEM)(
@@ -5307,7 +5307,7 @@ void
   void *Source,
   UINTN Length
   );
-# 538 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 538 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 void
 ( *EFI_PEI_SET_MEM)(
@@ -5315,7 +5315,7 @@ void
   UINTN Size,
   UINT8 Value
   );
-# 575 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 575 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_REPORT_STATUS_CODE)(
@@ -5326,13 +5326,13 @@ EFI_STATUS
   const EFI_GUID *CallerId ,
   const EFI_STATUS_CODE_DATA *Data
   );
-# 599 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 599 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_RESET_SYSTEM)(
   const EFI_PEI_SERVICES **PeiServices
   );
-# 618 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 618 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 void
 ( *EFI_PEI_RESET2_SYSTEM)(
@@ -5341,7 +5341,7 @@ void
   UINTN DataSize,
   void *ResetData
   );
-# 647 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 647 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_FIND_BY_NAME)(
@@ -5409,14 +5409,14 @@ typedef struct {
 
   UINT32 AuthenticationStatus;
 } EFI_FV_FILE_INFO2;
-# 733 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 733 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_GET_FILE_INFO)(
   EFI_PEI_FILE_HANDLE FileHandle,
   EFI_FV_FILE_INFO *FileInfo
   );
-# 757 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 757 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_GET_FILE_INFO2)(
@@ -5451,20 +5451,20 @@ typedef struct {
 
   UINT64 FvSize;
 } EFI_FV_INFO;
-# 809 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 809 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_FFS_GET_VOLUME_INFO)(
   EFI_PEI_FV_HANDLE VolumeHandle,
   EFI_FV_INFO *VolumeInfo
   );
-# 840 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 840 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 EFI_STATUS
 ( *EFI_PEI_REGISTER_FOR_SHADOW)(
   EFI_PEI_FILE_HANDLE FileHandle
   );
-# 877 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 877 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 struct _EFI_PEI_SERVICES {
 
 
@@ -5569,7 +5569,7 @@ typedef struct _EFI_SEC_PEI_HAND_OFF {
 
 
   UINTN TemporaryRamSize;
-# 991 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 991 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
   void *PeiTemporaryRamBase;
 
 
@@ -5591,142 +5591,142 @@ typedef struct _EFI_SEC_PEI_HAND_OFF {
 
   UINTN StackSize;
 } EFI_SEC_PEI_HAND_OFF;
-# 1049 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Pi/PiPeiCis.h"
+# 1049 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Pi/PiPeiCis.h"
 typedef
 void
 ( *EFI_PEI_CORE_ENTRY_POINT)(
   const EFI_SEC_PEI_HAND_OFF *SecCoreData,
   const EFI_PEI_PPI_DESCRIPTOR *PpiList
   );
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/PiPei.h" 2
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h" 1
-# 809 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/PiPei.h" 2
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h" 1
+# 809 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdSetSku (
   UINTN SkuId
   );
-# 825 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 825 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGet8 (
   UINTN TokenNumber
   );
-# 841 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 841 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGet16 (
   UINTN TokenNumber
   );
-# 857 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 857 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGet32 (
   UINTN TokenNumber
   );
-# 873 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 873 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGet64 (
   UINTN TokenNumber
   );
-# 889 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 889 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetPtr (
   UINTN TokenNumber
   );
-# 905 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 905 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetBool (
   UINTN TokenNumber
   );
-# 919 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 919 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSize (
   UINTN TokenNumber
   );
-# 939 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 939 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT8
 
 LibPcdGetEx8 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 960 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 960 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT16
 
 LibPcdGetEx16 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 978 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 978 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT32
 
 LibPcdGetEx32 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 999 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 999 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINT64
 
 LibPcdGetEx64 (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1020 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1020 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPcdGetExPtr (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1041 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1041 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 BOOLEAN
 
 LibPcdGetExBool (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1062 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1062 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetExSize (
   const GUID *Guid,
   UINTN TokenNumber
   );
-# 1081 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1081 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1100 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1100 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1119 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1119 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1138 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1138 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSet64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1167 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1167 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetPtrS (
@@ -5734,14 +5734,14 @@ LibPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1187 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1187 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1210 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1210 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx8S (
@@ -5749,7 +5749,7 @@ LibPcdSetEx8S (
   UINTN TokenNumber,
   UINT8 Value
   );
-# 1234 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1234 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx16S (
@@ -5757,7 +5757,7 @@ LibPcdSetEx16S (
   UINTN TokenNumber,
   UINT16 Value
   );
-# 1258 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1258 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx32S (
@@ -5765,7 +5765,7 @@ LibPcdSetEx32S (
   UINTN TokenNumber,
   UINT32 Value
   );
-# 1282 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1282 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetEx64S (
@@ -5773,7 +5773,7 @@ LibPcdSetEx64S (
   UINTN TokenNumber,
   UINT64 Value
   );
-# 1312 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1312 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExPtrS (
@@ -5782,7 +5782,7 @@ LibPcdSetExPtrS (
   UINTN *SizeOfBuffer,
   void *Buffer
   );
-# 1337 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1337 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPcdSetExBoolS (
@@ -5790,7 +5790,7 @@ LibPcdSetExBoolS (
   UINTN TokenNumber,
   BOOLEAN Value
   );
-# 1361 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1361 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 typedef
 void
 ( *PCD_CALLBACK)(
@@ -5799,7 +5799,7 @@ void
   void *TokenData,
   UINTN TokenDataSize
   );
-# 1386 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1386 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCallbackOnSet (
@@ -5807,7 +5807,7 @@ LibPcdCallbackOnSet (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1407 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1407 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdCancelCallback (
@@ -5815,20 +5815,20 @@ LibPcdCancelCallback (
   UINTN TokenNumber,
   PCD_CALLBACK NotificationFunction
   );
-# 1434 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1434 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetNextToken (
   const GUID *Guid ,
   UINTN TokenNumber
   );
-# 1454 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1454 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 GUID *
 
 LibPcdGetNextTokenSpace (
   const GUID *TokenSpaceGuid
   );
-# 1483 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1483 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtr (
@@ -5837,7 +5837,7 @@ LibPatchPcdSetPtr (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1515 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1515 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrS (
@@ -5846,7 +5846,7 @@ LibPatchPcdSetPtrS (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1549 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1549 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void *
 
 LibPatchPcdSetPtrAndSize (
@@ -5856,7 +5856,7 @@ LibPatchPcdSetPtrAndSize (
   UINTN *SizeOfBuffer,
   const void *Buffer
   );
-# 1584 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1584 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 RETURN_STATUS
 
 LibPatchPcdSetPtrAndSizeS (
@@ -5895,14 +5895,14 @@ typedef struct {
 
   CHAR8 *PcdName;
 } PCD_INFO;
-# 1635 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1635 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfo (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1655 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1655 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 void
 
 LibPcdGetInfoEx (
@@ -5910,13 +5910,13 @@ LibPcdGetInfoEx (
   UINTN TokenNumber,
   PCD_INFO *PcdInfo
   );
-# 1670 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Library/PcdLib.h"
+# 1670 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Library/PcdLib.h"
 UINTN
 
 LibPcdGetSku (
   void
   );
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 2
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib/DEBUG/AutoGen.h" 2
 
 extern GUID gEfiCallerIdGuid;
 extern GUID gEdkiiDscPlatformGuid;
@@ -5953,7 +5953,7 @@ extern const UINT8 _gPcd_FixedAtBuild_PcdCpuStackSwitchExceptionList[];
 
 extern const UINT32 _gPcd_FixedAtBuild_PcdCpuKnownGoodStackSize;
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm"
 ;------------------------------------------------------------------------------ ;
 ; Copyright (c) 2012 - 2022, Intel Corporation. All rights reserved.<BR>
 ; SPDX-License-Identifier: BSD-2-Clause-Patent

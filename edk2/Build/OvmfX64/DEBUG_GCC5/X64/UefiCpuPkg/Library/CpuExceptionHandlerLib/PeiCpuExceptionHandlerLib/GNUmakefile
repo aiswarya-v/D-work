@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PeiCpuExceptionHandlerLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = UefiCpuPkg/Library/CpuExceptionHandlerLib
 PACKAGE_RELATIVE_DIR = Library/CpuExceptionHandlerLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/980DDA67-44A6-4897-99E6-275290B71F9EPeiCpuExceptionHandlerLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/980DDA67-44A6-4897-99E6-275290B71F9EPeiCpuExceptionHandlerLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -208,8 +208,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg \
     -I$(WORKSPACE)/UefiCpuPkg/Include
 
@@ -224,13 +224,13 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include/ \
     -I$(WORKSPACE)/MdePkg/Include/X64/ \
     -I$(WORKSPACE)/MdeModulePkg/ \
-    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
+    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/inc.lst
 
 
 #
@@ -240,7 +240,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib \
               
 
 #
@@ -315,38 +315,38 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/PeiCpuException.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PeiCpuException.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PeiCpuException.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./PeiCpuException.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c
-
 $(OUTPUT_DIR)/X64/ArchExceptionHandler.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/ArchExceptionHandler.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/ArchExceptionHandler.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ArchExceptionHandler.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/ArchExceptionHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ArchExceptionHandler.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/ArchExceptionHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ArchExceptionHandler.c
+
+$(OUTPUT_DIR)/PeiCpuException.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PeiCpuException.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PeiCpuException.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./PeiCpuException.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c
 
 $(OUTPUT_DIR)/CpuExceptionCommon.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CpuExceptionCommon.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CpuExceptionCommon.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/CpuExceptionCommon.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./CpuExceptionCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/CpuExceptionCommon.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./CpuExceptionCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/CpuExceptionCommon.c
 
 $(OUTPUT_DIR)/PeiDxeSmmCpuException.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PeiDxeSmmCpuException.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PeiDxeSmmCpuException.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiDxeSmmCpuException.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./PeiDxeSmmCpuException.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiDxeSmmCpuException.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/./PeiDxeSmmCpuException.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiDxeSmmCpuException.c
 
 $(OUTPUT_DIR)/PeiCpuExceptionHandlerLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PeiCpuExceptionHandlerLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/PeiCpuExceptionHandlerLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/X64/SecPeiExceptionHandlerAsm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/SecPeiExceptionHandlerAsm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/SecPeiExceptionHandlerAsm.obj : $(WORKSPACE)/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/SecPeiExceptionHandlerAsm.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib/OUTPUT/X64/SecPeiExceptionHandlerAsm.iii
 
 
 

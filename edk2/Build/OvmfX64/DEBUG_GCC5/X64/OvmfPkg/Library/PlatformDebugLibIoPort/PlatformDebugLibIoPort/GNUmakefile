@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PlatformDebugLibIoPort
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/PlatformDebugLibIoPort
 PACKAGE_RELATIVE_DIR = Library/PlatformDebugLibIoPort
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformDebugLibIoPort
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/DF934DA3-CD31-49FE-AF50-B3C87C79325FPlatformDebugLibIoPort
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformDebugLibIoPort
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/DF934DA3-CD31-49FE-AF50-B3C87C79325FPlatformDebugLibIoPort
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -206,7 +206,7 @@ INC =  \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/object_files.lst
 
 
 #
@@ -216,7 +216,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib \
               
 
 #
@@ -291,25 +291,25 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformDebugLibIoPort/DebugIoPortQemu.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugIoPortQemu.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugIoPortQemu.c
+$(OUTPUT_DIR)/DebugLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DebugLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DebugLib.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLib.c
 
 $(OUTPUT_DIR)/DebugLibDetect.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/DebugLibDetect.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/DebugLibDetect.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLibDetect.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugLibDetect.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLibDetect.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugLibDetect.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLibDetect.c
 
-$(OUTPUT_DIR)/DebugLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/DebugLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/DebugLib.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugLib.c
+$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/DebugIoPortQemu.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformDebugLibIoPort/DebugIoPortQemu.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/./DebugIoPortQemu.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformDebugLibIoPort/DebugIoPortQemu.c
 
 $(OUTPUT_DIR)/PlatformDebugLibIoPort.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PlatformDebugLibIoPort.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformDebugLibIoPort/PlatformDebugLibIoPort/OUTPUT/PlatformDebugLibIoPort.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

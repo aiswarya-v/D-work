@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = ResetVector
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/ResetVector
 PACKAGE_RELATIVE_DIR = ResetVector
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/ResetVector
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/1BA0062E-C779-4582-8566-336AE8F78F09ResetVector
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/ResetVector
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/1BA0062E-C779-4582-8566-336AE8F78F09ResetVector
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -201,8 +201,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg \
     -I$(WORKSPACE)/UefiCpuPkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg/ResetVector/Vtf0/
@@ -219,13 +219,13 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include/ \
     -I$(WORKSPACE)/MdePkg/Include/X64/ \
     -I$(WORKSPACE)/MdeModulePkg/ \
-    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
+    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/ \
     -I$(WORKSPACE)/UefiCpuPkg/ResetVector/Vtf0/
 
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/inc.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/inc.lst
 
 
 #
@@ -235,7 +235,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
 
@@ -314,11 +314,11 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/ResetVector.bin : $(MAKE_FILE)
 $(OUTPUT_DIR)/ResetVector.bin : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ResetVector.bin : $(WORKSPACE)/OvmfPkg/ResetVector/ResetVector.nasmb
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/ResetVector/ResetVector.nasmb
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/ResetVector/ResetVector.nasmb > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.ii
-	Trim --source-code --convert-hex -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/ResetVector/ -l /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.lst $(NASMB_FLAGS) $(NASM_INC) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.iii
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin $(OUTPUT_DIR)/ResetVector.com
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/ResetVector/ResetVector.nasmb
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/ResetVector/ResetVector.nasmb > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.ii
+	Trim --source-code --convert-hex -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/ResetVector/ -l /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.lst $(NASMB_FLAGS) $(NASM_INC) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.iii
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/ResetVector/ResetVector/OUTPUT/ResetVector.bin $(OUTPUT_DIR)/ResetVector.com
 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs : $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC1.1.raw
 	GenFfs -t EFI_FV_FILETYPE_RAW -g $(MODULE_GUID) -o $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs -oi $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC1.1.raw -n 16

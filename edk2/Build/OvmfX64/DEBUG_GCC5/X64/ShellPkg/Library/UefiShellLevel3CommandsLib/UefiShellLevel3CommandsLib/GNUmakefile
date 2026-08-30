@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = UefiShellLevel3CommandsLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = ShellPkg/Library/UefiShellLevel3CommandsLib
 PACKAGE_RELATIVE_DIR = Library/UefiShellLevel3CommandsLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/71374B42-85D7-4753-AD17-AA84C3A0EB93UefiShellLevel3CommandsLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/71374B42-85D7-4753-AD17-AA84C3A0EB93UefiShellLevel3CommandsLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -215,10 +215,10 @@ INC =  \
     -I$(WORKSPACE)/ShellPkg/Include \
     -I$(WORKSPACE)/ShellPkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
-    -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include
+    -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/object_files.lst
 
 
 #
@@ -228,7 +228,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib \
               
 
 #
@@ -303,76 +303,76 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Touch.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Touch.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Touch.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Touch.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Touch.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Touch.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Touch.c
-
-$(OUTPUT_DIR)/Ver.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Ver.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Ver.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Ver.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Ver.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Ver.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Ver.c
-
-$(OUTPUT_DIR)/Alias.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Alias.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Alias.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Alias.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Alias.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Alias.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Alias.c
-
-$(OUTPUT_DIR)/GetMtc.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/GetMtc.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/GetMtc.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/GetMtc.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/GetMtc.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./GetMtc.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/GetMtc.c
-
-$(OUTPUT_DIR)/Pause.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Pause.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Pause.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Pause.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Pause.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Pause.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Pause.c
-
 $(OUTPUT_DIR)/Echo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Echo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Echo.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
 $(OUTPUT_DIR)/Echo.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Echo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Echo.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Echo.c
-
-$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./UefiShellLevel3CommandsLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.c
-
-$(OUTPUT_DIR)/Cls.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Cls.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Cls.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Cls.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Cls.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Cls.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Cls.c
-
-$(OUTPUT_DIR)/Type.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Type.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Type.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
-$(OUTPUT_DIR)/Type.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Type.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Type.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Type.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Echo.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Echo.c
 
 $(OUTPUT_DIR)/Help.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Help.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Help.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
 $(OUTPUT_DIR)/Help.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Help.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Help.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Help.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Help.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Help.c
+
+$(OUTPUT_DIR)/Cls.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Cls.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Cls.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Cls.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Cls.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Cls.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Cls.c
+
+$(OUTPUT_DIR)/Alias.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Alias.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Alias.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Alias.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Alias.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Alias.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Alias.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/Touch.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Touch.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Touch.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Touch.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Touch.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Touch.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Touch.c
+
+$(OUTPUT_DIR)/GetMtc.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/GetMtc.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/GetMtc.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/GetMtc.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/GetMtc.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./GetMtc.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/GetMtc.c
+
+$(OUTPUT_DIR)/Ver.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Ver.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Ver.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Ver.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Ver.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Ver.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Ver.c
+
+$(OUTPUT_DIR)/Type.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Type.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Type.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Type.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Type.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Type.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Type.c
+
+$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/UefiShellLevel3CommandsLib.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./UefiShellLevel3CommandsLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.c
+
+$(OUTPUT_DIR)/Pause.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Pause.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Pause.obj : $(DEBUG_DIR)/UefiShellLevel3CommandsLibStrDefs.h
+$(OUTPUT_DIR)/Pause.obj : $(WORKSPACE)/ShellPkg/Library/UefiShellLevel3CommandsLib/Pause.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/./Pause.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/Pause.c
 
 $(OUTPUT_DIR)/UefiShellLevel3CommandsLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/UefiShellLevel3CommandsLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib/OUTPUT/UefiShellLevel3CommandsLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

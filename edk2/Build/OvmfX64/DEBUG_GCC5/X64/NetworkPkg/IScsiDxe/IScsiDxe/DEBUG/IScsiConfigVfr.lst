@@ -1,24 +1,24 @@
 //
 //  VFR compiler version  2.02 (UEFI 2.4) Developer Build based on Revision: Unknown
 //
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxeStrDefs.h" 1
-# 87 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxeStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxeStrDefs.h" 1
+# 87 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxeStrDefs.h"
 extern unsigned char IScsiDxeStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
-# 9 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h" 1
-# 12 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/Include/Guid/IScsiConfigHii.h" 1
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/Include/Guid/IScsiConfigHii.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
+# 9 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h" 1
+# 12 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/Include/Guid/IScsiConfigHii.h" 1
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/Include/Guid/IScsiConfigHii.h"
 extern EFI_GUID { 0x4b47d616, 0xa8d6, 0x4552, { 0x9d, 0x44, 0xcc, 0xad, 0x2e, 0xf, 0x4c, 0xf9}};
-# 13 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h" 2
-# 148 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h"
+# 13 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h" 2
+# 148 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigNVDataStruc.h"
 #pragma pack(1)
 
 
@@ -102,7 +102,7 @@ typedef struct _ISCSI_CONFIG_IFR_NVDATA {
   KEYWORD_STR Keyword[0x08];
 } ISCSI_CONFIG_IFR_NVDATA;
 #pragma pack()
-# 10 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr" 2
+# 10 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/IScsiDxe/IScsiConfigVfr.vfr" 2
 
 
 

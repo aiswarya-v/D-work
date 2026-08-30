@@ -20,7 +20,7 @@ extern GUID  gEfiCallerIdGuid;
 extern GUID  gEdkiiDscPlatformGuid;
 extern CHAR8 *gEfiCallerBaseName;
 
-#define STACK_COOKIE_VALUE 0x73298F75906A589ULL
+#define STACK_COOKIE_VALUE 0x425C36905EEA410AULL
 
 // Guids
 extern GUID gCcEventEntryHobGuid;

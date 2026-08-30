@@ -1,7 +1,7 @@
 
 // This file has been generated from:
-//   -Python script: /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/RamDisk.amli
-//   -Input AML file: /home/mcw/MCW/Dell/EDK2/edk2/BaseTools/Source/Python/AmlToC/AmlToC.py
+//   -Python script: /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/OUTPUT/RamDisk.amli
+//   -Input AML file: /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/BaseTools/Source/Python/AmlToC/AmlToC.py
 
 unsigned char ramdisk_aml_code[] = {
   0x53, 0x53, 0x44, 0x54, 0x7C, 0x00, 0x00, 0x00, 

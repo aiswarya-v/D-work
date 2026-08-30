@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = CcExitLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/CcExitLib
 PACKAGE_RELATIVE_DIR = Library/CcExitLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/0e923c25-13cd-430b-8714-ffe85652a97bCcExitLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/0e923c25-13cd-430b-8714-ffe85652a97bCcExitLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -227,8 +227,8 @@ NASM_INC =  \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/inc.lst
 
 
 #
@@ -238,7 +238,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib \
               
 
 #
@@ -313,43 +313,43 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
+$(OUTPUT_DIR)/CcExitLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CcExitLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CcExitLib.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcExitLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/CcExitLib.c
+
 $(OUTPUT_DIR)/CcExitVeHandler.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CcExitVeHandler.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CcExitVeHandler.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcExitVeHandler.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitVeHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/CcExitVeHandler.c
-
-$(OUTPUT_DIR)/CcExitVcHandler.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CcExitVcHandler.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CcExitVcHandler.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcExitVcHandler.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitVcHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/CcExitVcHandler.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitVeHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/CcExitVeHandler.c
 
 $(OUTPUT_DIR)/PeiDxeCcExitVcHandler.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PeiDxeCcExitVcHandler.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PeiDxeCcExitVcHandler.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/PeiDxeCcExitVcHandler.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./PeiDxeCcExitVcHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/PeiDxeCcExitVcHandler.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./PeiDxeCcExitVcHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/PeiDxeCcExitVcHandler.c
 
 $(OUTPUT_DIR)/CcInstruction.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CcInstruction.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CcInstruction.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcInstruction.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcInstruction.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/CcInstruction.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcInstruction.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/CcInstruction.c
 
-$(OUTPUT_DIR)/CcExitLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CcExitLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CcExitLib.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcExitLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/CcExitLib.c
+$(OUTPUT_DIR)/CcExitVcHandler.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CcExitVcHandler.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CcExitVcHandler.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/CcExitVcHandler.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/./CcExitVcHandler.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/CcExitVcHandler.c
 
 $(OUTPUT_DIR)/CcExitLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/CcExitLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/CcExitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/X64/TdVmcallCpuid.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/TdVmcallCpuid.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/TdVmcallCpuid.obj : $(WORKSPACE)/OvmfPkg/Library/CcExitLib/X64/TdVmcallCpuid.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/X64/TdVmcallCpuid.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/X64/TdVmcallCpuid.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/CcExitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/X64/TdVmcallCpuid.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/X64/TdVmcallCpuid.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/CcExitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/CcExitLib/CcExitLib/OUTPUT/X64/TdVmcallCpuid.iii
 
 
 

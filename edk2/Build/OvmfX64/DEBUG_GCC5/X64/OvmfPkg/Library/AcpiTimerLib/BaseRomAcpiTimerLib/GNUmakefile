@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = BaseRomAcpiTimerLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/AcpiTimerLib
 PACKAGE_RELATIVE_DIR = Library/AcpiTimerLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/AcpiTimerLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/CDD9D74F-213E-4c28-98F7-8B4A167DB936BaseRomAcpiTimerLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/AcpiTimerLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/CDD9D74F-213E-4c28-98F7-8B4A167DB936BaseRomAcpiTimerLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -205,7 +205,7 @@ INC =  \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/object_files.lst
 
 
 #
@@ -215,7 +215,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib \
               
 
 #
@@ -293,17 +293,17 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AcpiTimerLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AcpiTimerLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AcpiTimerLib.obj : $(WORKSPACE)/OvmfPkg/Library/AcpiTimerLib/AcpiTimerLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/./AcpiTimerLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/AcpiTimerLib/AcpiTimerLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/./AcpiTimerLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/AcpiTimerLib/AcpiTimerLib.c
 
 $(OUTPUT_DIR)/BaseRomAcpiTimerLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/BaseRomAcpiTimerLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/BaseRomAcpiTimerLib.obj : $(WORKSPACE)/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/./BaseRomAcpiTimerLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/./BaseRomAcpiTimerLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib.c
 
 $(OUTPUT_DIR)/BaseRomAcpiTimerLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/BaseRomAcpiTimerLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib/OUTPUT/BaseRomAcpiTimerLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

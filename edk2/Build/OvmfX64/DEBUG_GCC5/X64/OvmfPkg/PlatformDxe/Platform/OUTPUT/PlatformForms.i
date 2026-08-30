@@ -1,25 +1,25 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/PlatformDxe/Platform/DEBUG/PlatformDxeStrDefs.h" 1
-# 28 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/PlatformDxe/Platform/DEBUG/PlatformDxeStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/PlatformDxe/Platform/DEBUG/PlatformDxeStrDefs.h" 1
+# 28 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/PlatformDxe/Platform/DEBUG/PlatformDxeStrDefs.h"
 extern unsigned char PlatformDxeStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
-# 18 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Include/Guid/OvmfPlatformConfig.h" 1
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Include/Guid/OvmfPlatformConfig.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
+# 18 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Include/Guid/OvmfPlatformConfig.h" 1
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Include/Guid/OvmfPlatformConfig.h"
 extern EFI_GUID {0x7235c51c, 0x0c80, 0x4cab, {0x87, 0xac, 0x3b, 0x08, 0x4a, 0x63, 0x04, 0xb1}};
-# 19 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/Platform.h" 1
-# 32 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/Platform.h"
+# 19 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/Platform.h" 1
+# 32 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/Platform.h"
 typedef struct {
   UINT16 CurrentPreferredResolution[16];
   UINT32 NextPreferredResolution;
 } MAIN_FORM_STATE;
-# 20 "/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr" 2
+# 20 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/PlatformDxe/PlatformForms.vfr" 2
 
 formset
   guid = {0x7235c51c, 0x0c80, 0x4cab, {0x87, 0xac, 0x3b, 0x08, 0x4a, 0x63, 0x04, 0xb1}},

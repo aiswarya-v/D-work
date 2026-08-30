@@ -771,6 +771,9 @@
 ################################################################################
 [Components]
   OvmfPkg/ResetVector/ResetVector.inf
+  UefiLearningsPkg/ProducerDxe/PciProducer.inf
+  UefiLearningsPkg/ConsumerDxe/PciConsumer.inf
+  UefiLearningsPkg/PciTestDxe/PciTestDxe.inf
 
   #
   # SEC Phase modules

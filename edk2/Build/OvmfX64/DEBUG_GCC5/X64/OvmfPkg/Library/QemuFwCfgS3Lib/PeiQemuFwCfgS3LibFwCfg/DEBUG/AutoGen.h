@@ -19,7 +19,7 @@ extern GUID  gEfiCallerIdGuid;
 extern GUID  gEdkiiDscPlatformGuid;
 extern CHAR8 *gEfiCallerBaseName;
 
-#define STACK_COOKIE_VALUE 0xDF0A2B1688CD6707ULL
+#define STACK_COOKIE_VALUE 0x7F9C0698AD2D57E4ULL
 
 // Definition of SkuId Array
 extern UINT64 _gPcd_SkuId_Array[];

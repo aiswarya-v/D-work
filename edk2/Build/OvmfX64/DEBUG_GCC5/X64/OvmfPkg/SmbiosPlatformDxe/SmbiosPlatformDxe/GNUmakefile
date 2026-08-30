@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = SmbiosPlatformDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/SmbiosPlatformDxe
 PACKAGE_RELATIVE_DIR = SmbiosPlatformDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/SmbiosPlatformDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/4110465d-5ff3-4f4b-b580-24ed0d06747aSmbiosPlatformDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/SmbiosPlatformDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/4110465d-5ff3-4f4b-b580-24ed0d06747aSmbiosPlatformDxe
 
 MODULE_ENTRY_POINT = SmbiosTablePublishEntry
 ARCH_ENTRY_POINT = SmbiosTablePublishEntry
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -229,13 +229,13 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -245,7 +245,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -342,50 +342,50 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/AutoGen.c
-
-$(OUTPUT_DIR)/CloudHv.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CloudHv.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CloudHv.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/CloudHv.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./CloudHv.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/SmbiosPlatformDxe/CloudHv.c
+$(OUTPUT_DIR)/Qemu.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Qemu.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Qemu.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/Qemu.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./Qemu.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/SmbiosPlatformDxe/Qemu.c
 
 $(OUTPUT_DIR)/SmbiosPlatformDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SmbiosPlatformDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SmbiosPlatformDxe.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./SmbiosPlatformDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./SmbiosPlatformDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
 
-$(OUTPUT_DIR)/Qemu.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Qemu.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Qemu.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/Qemu.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./Qemu.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/SmbiosPlatformDxe/Qemu.c
+$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/CloudHv.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CloudHv.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CloudHv.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/CloudHv.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./CloudHv.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/SmbiosPlatformDxe/CloudHv.c
 
 $(OUTPUT_DIR)/EntryPoint.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/EntryPoint.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/EntryPoint.obj : $(WORKSPACE)/OvmfPkg/SmbiosPlatformDxe/EntryPoint.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./EntryPoint.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/SmbiosPlatformDxe/EntryPoint.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/./EntryPoint.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/SmbiosPlatformDxe/EntryPoint.c
 
 $(OUTPUT_DIR)/SmbiosPlatformDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/SmbiosPlatformDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/SmbiosPlatformDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/SmbiosPlatformDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/SmbiosPlatformDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
 
 $(OUTPUT_DIR)/SmbiosPlatformDxe.efi : $(DEBUG_DIR)/SmbiosPlatformDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/OUTPUT/SmbiosPlatformDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

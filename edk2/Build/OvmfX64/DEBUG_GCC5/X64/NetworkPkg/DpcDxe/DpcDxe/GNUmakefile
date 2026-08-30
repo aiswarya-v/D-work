@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = DpcDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = NetworkPkg/DpcDxe
 PACKAGE_RELATIVE_DIR = DpcDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/DpcDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/A210F973-229D-4f4d-AA37-9895E6C9EABADpcDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/DpcDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/A210F973-229D-4f4d-AA37-9895E6C9EABADpcDxe
 
 MODULE_ENTRY_POINT = DpcDriverEntryPoint
 ARCH_ENTRY_POINT = DpcDriverEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -224,8 +224,8 @@ INC =  \
     -I$(WORKSPACE)/NetworkPkg \
     -I$(WORKSPACE)/NetworkPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -235,7 +235,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -327,35 +327,35 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Dpc.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Dpc.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Dpc.obj : $(WORKSPACE)/NetworkPkg/DpcDxe/Dpc.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/./Dpc.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/DpcDxe/Dpc.c
-
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/Dpc.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Dpc.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Dpc.obj : $(WORKSPACE)/NetworkPkg/DpcDxe/Dpc.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/./Dpc.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/DpcDxe/Dpc.c
 
 $(OUTPUT_DIR)/DpcDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/DpcDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/DpcDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/DpcDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/DpcDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
 
 $(OUTPUT_DIR)/DpcDxe.efi : $(DEBUG_DIR)/DpcDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/DpcDxe/DpcDxe/OUTPUT/DpcDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

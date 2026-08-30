@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = RngDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = SecurityPkg/RandomNumberGenerator/RngDxe
 PACKAGE_RELATIVE_DIR = RandomNumberGenerator/RngDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/SecurityPkg/RandomNumberGenerator/RngDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/B981A835-6EE8-4f4c-AE0B-210AA0BFBF01RngDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/SecurityPkg/RandomNumberGenerator/RngDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/B981A835-6EE8-4f4c-AE0B-210AA0BFBF01RngDxe
 
 MODULE_ENTRY_POINT = RngDriverEntry
 ARCH_ENTRY_POINT = RngDriverEntry
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -229,8 +229,8 @@ INC =  \
     -I$(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe \
     -I$(DEBUG_DIR) \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdePkg \
     -I$(WORKSPACE)/MdePkg/Include \
     -I$(WORKSPACE)/MdePkg/Test/UnitTest/Include \
@@ -243,8 +243,8 @@ INC =  \
     -I$(WORKSPACE)/SecurityPkg/DeviceSecurity/SpdmLib/Include \
     -I$(WORKSPACE)/SecurityPkg/DeviceSecurity/SpdmLib/libspdm/include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -254,7 +254,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -355,50 +355,50 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Rand/AesCore.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Rand/AesCore.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Rand/AesCore.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/AesCore.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/AesCore.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/AesCore.c
-
 $(OUTPUT_DIR)/Rand/RdRand.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Rand/RdRand.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Rand/RdRand.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RdRand.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/RdRand.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RdRand.c
-
-$(OUTPUT_DIR)/RngDxe.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/RngDxe.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/RngDxe.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/./RngDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.c
-
-$(OUTPUT_DIR)/Rand/RngDxe.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Rand/RngDxe.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Rand/RngDxe.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RngDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/RngDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RngDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/RdRand.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RdRand.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/Rand/AesCore.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Rand/AesCore.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Rand/AesCore.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/AesCore.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/AesCore.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/AesCore.c
+
+$(OUTPUT_DIR)/Rand/RngDxe.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Rand/RngDxe.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Rand/RngDxe.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RngDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/Rand/RngDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/Rand/RngDxe.c
+
+$(OUTPUT_DIR)/RngDxe.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/RngDxe.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/RngDxe.obj : $(WORKSPACE)/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/./RngDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.c
 
 $(OUTPUT_DIR)/RngDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/RngDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/RngDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/RngDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/RngDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
 
 $(OUTPUT_DIR)/RngDxe.efi : $(DEBUG_DIR)/RngDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/DEBUG/RngDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe/OUTPUT/RngDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

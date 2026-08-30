@@ -113,43 +113,42 @@
 #define STR_CHANGE_ORDER                                     0x0061
 #define STR_HARDWARE_FLOW_CONTROL                            0x0062
 #define STR_NONE_FLOW_CONTROL                                0x0063
-#define STR_FORM_BOOT_CUSTOM_CHKBOX                          0x0064
-// #define STR_FORM_BOOT_NEXT_TITLE                             0x0065 // not referenced
-// #define STR_FORM_BOOT_NEXT_HELP                              0x0066 // not referenced
-// #define STR_FORM_TIME_OUT_TITLE                              0x0067 // not referenced
-// #define STR_FORM_TIME_OUT_HELP                               0x0068 // not referenced
-// #define STR_FORM_MEMORY_CHECK_TITLE                          0x0069 // not referenced
-// #define STR_FORM_MEMORY_CHECK_HELP                           0x006A // not referenced
-// #define STR_FORM_UEFI_OPTIMIZED_BOOT_TITLE                   0x006B // not referenced
-// #define STR_FORM_UEFI_OPTIMIZED_BOOT_HELP                    0x006C // not referenced
-// #define UEFI_OPTIMIZED_BOOT_DESCRIPTION                      0x006D // not referenced
-// #define UEFI_OPTIMIZED_BOOT_HELP                             0x006E // not referenced
-// #define STR_FORM_SET_FD_ORDER_TITLE                          0x006F // not referenced
-// #define STR_FORM_SET_HD_ORDER_TITLE                          0x0070 // not referenced
-// #define STR_FORM_SET_CD_ORDER_TITLE                          0x0071 // not referenced
-// #define STR_FORM_SET_NET_ORDER_TITLE                         0x0072 // not referenced
-// #define STR_FORM_SET_BEV_ORDER_TITLE                         0x0073 // not referenced
-// #define STR_FORM_GOTO_SETTING                                0x0074 // not referenced
-// #define STR_COM1                                             0x0075 // not referenced
-// #define STR_COM2                                             0x0076 // not referenced
-// #define STR_COM_AS_CONSOLE_OPTION                            0x0077 // not referenced
-// #define STR_LOAD_OPTION_DEVPATH                              0x0078 // not referenced
-// #define STR_LOAD_OPTION_ACTIVE                               0x0079 // not referenced
-// #define STR_CON_IN_SETUP                                     0x007A // not referenced
-// #define STR_CON_OUT_SETUP                                    0x007B // not referenced
-// #define STR_CON_ERR_SETUP                                    0x007C // not referenced
-// #define STR_RESET                                            0x007D // not referenced
-// #define STR_BOOT_LEGACY                                      0x007E // not referenced
-// #define STR_BOOT_LEGACY_HELP                                 0x007F // not referenced
-// #define STR_BOOT_LEGACY_FLOPPY                               0x0080 // not referenced
-// #define STR_BOOT_LEGACY_HARDDRIVE                            0x0081 // not referenced
-// #define STR_BOOT_LEGACY_CDROM                                0x0082 // not referenced
-// #define STR_BOOT_LEGACY_PCMCIA                               0x0083 // not referenced
-// #define STR_BOOT_LEGACY_USB                                  0x0084 // not referenced
-// #define STR_BOOT_LEGACY_NETWORK                              0x0085 // not referenced
-// #define STR_DISABLE_LEGACY_DEVICE                            0x0086 // not referenced
-// #define STR_FILE_EXPLORER_TITLE                              0x0087 // not referenced
-// #define STR_OUT_OF_BAND_PORT                                 0x0088 // not referenced
+// #define STR_FORM_BOOT_NEXT_TITLE                             0x0064 // not referenced
+// #define STR_FORM_BOOT_NEXT_HELP                              0x0065 // not referenced
+// #define STR_FORM_TIME_OUT_TITLE                              0x0066 // not referenced
+// #define STR_FORM_TIME_OUT_HELP                               0x0067 // not referenced
+// #define STR_FORM_MEMORY_CHECK_TITLE                          0x0068 // not referenced
+// #define STR_FORM_MEMORY_CHECK_HELP                           0x0069 // not referenced
+// #define STR_FORM_UEFI_OPTIMIZED_BOOT_TITLE                   0x006A // not referenced
+// #define STR_FORM_UEFI_OPTIMIZED_BOOT_HELP                    0x006B // not referenced
+// #define UEFI_OPTIMIZED_BOOT_DESCRIPTION                      0x006C // not referenced
+// #define UEFI_OPTIMIZED_BOOT_HELP                             0x006D // not referenced
+// #define STR_FORM_SET_FD_ORDER_TITLE                          0x006E // not referenced
+// #define STR_FORM_SET_HD_ORDER_TITLE                          0x006F // not referenced
+// #define STR_FORM_SET_CD_ORDER_TITLE                          0x0070 // not referenced
+// #define STR_FORM_SET_NET_ORDER_TITLE                         0x0071 // not referenced
+// #define STR_FORM_SET_BEV_ORDER_TITLE                         0x0072 // not referenced
+// #define STR_FORM_GOTO_SETTING                                0x0073 // not referenced
+// #define STR_COM1                                             0x0074 // not referenced
+// #define STR_COM2                                             0x0075 // not referenced
+// #define STR_COM_AS_CONSOLE_OPTION                            0x0076 // not referenced
+// #define STR_LOAD_OPTION_DEVPATH                              0x0077 // not referenced
+// #define STR_LOAD_OPTION_ACTIVE                               0x0078 // not referenced
+// #define STR_CON_IN_SETUP                                     0x0079 // not referenced
+// #define STR_CON_OUT_SETUP                                    0x007A // not referenced
+// #define STR_CON_ERR_SETUP                                    0x007B // not referenced
+// #define STR_RESET                                            0x007C // not referenced
+// #define STR_BOOT_LEGACY                                      0x007D // not referenced
+// #define STR_BOOT_LEGACY_HELP                                 0x007E // not referenced
+// #define STR_BOOT_LEGACY_FLOPPY                               0x007F // not referenced
+// #define STR_BOOT_LEGACY_HARDDRIVE                            0x0080 // not referenced
+// #define STR_BOOT_LEGACY_CDROM                                0x0081 // not referenced
+// #define STR_BOOT_LEGACY_PCMCIA                               0x0082 // not referenced
+// #define STR_BOOT_LEGACY_USB                                  0x0083 // not referenced
+// #define STR_BOOT_LEGACY_NETWORK                              0x0084 // not referenced
+// #define STR_DISABLE_LEGACY_DEVICE                            0x0085 // not referenced
+// #define STR_FILE_EXPLORER_TITLE                              0x0086 // not referenced
+// #define STR_OUT_OF_BAND_PORT                                 0x0087 // not referenced
 
 extern unsigned char BootMaintenanceManagerUiLibStrings[];
 

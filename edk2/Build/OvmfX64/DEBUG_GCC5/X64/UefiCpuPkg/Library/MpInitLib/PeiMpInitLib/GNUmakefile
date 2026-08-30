@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PeiMpInitLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = UefiCpuPkg/Library/MpInitLib
 PACKAGE_RELATIVE_DIR = Library/MpInitLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/B00F6090-7739-4830-B906-E0032D388987PeiMpInitLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/B00F6090-7739-4830-B906-E0032D388987PeiMpInitLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -210,8 +210,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg \
     -I$(WORKSPACE)/UefiCpuPkg/Include
 
@@ -226,13 +226,13 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include/ \
     -I$(WORKSPACE)/MdePkg/Include/X64/ \
     -I$(WORKSPACE)/MdeModulePkg/ \
-    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
+    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/inc.lst
 
 
 #
@@ -242,7 +242,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib \
               
 
 #
@@ -320,45 +320,45 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/Microcode.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Microcode.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Microcode.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/Microcode.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./Microcode.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/Microcode.c
-
-$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/X64/CreatePageTable.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/CreatePageTable.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/X64/CreatePageTable.c
-
-$(OUTPUT_DIR)/X64/AmdSev.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/X64/AmdSev.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/X64/AmdSev.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/X64/AmdSev.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/AmdSev.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/X64/AmdSev.c
-
-$(OUTPUT_DIR)/MpLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/MpLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/MpLib.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/MpLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./MpLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/MpLib.c
-
-$(OUTPUT_DIR)/PeiMpLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PeiMpLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PeiMpLib.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/PeiMpLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./PeiMpLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/PeiMpLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./Microcode.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/Microcode.c
 
 $(OUTPUT_DIR)/AmdSev.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AmdSev.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AmdSev.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/AmdSev.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./AmdSev.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/AmdSev.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./AmdSev.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/AmdSev.c
+
+$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/X64/CreatePageTable.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/X64/CreatePageTable.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/CreatePageTable.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/X64/CreatePageTable.c
+
+$(OUTPUT_DIR)/MpLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/MpLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/MpLib.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/MpLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./MpLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/MpLib.c
+
+$(OUTPUT_DIR)/PeiMpLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PeiMpLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PeiMpLib.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/PeiMpLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/./PeiMpLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/PeiMpLib.c
+
+$(OUTPUT_DIR)/X64/AmdSev.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/X64/AmdSev.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/X64/AmdSev.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/X64/AmdSev.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/AmdSev.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/X64/AmdSev.c
 
 $(OUTPUT_DIR)/PeiMpInitLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PeiMpInitLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/PeiMpInitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/X64/MpFuncs.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/MpFuncs.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/MpFuncs.obj : $(WORKSPACE)/UefiCpuPkg/Library/MpInitLib/X64/MpFuncs.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/X64/MpFuncs.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/X64/MpFuncs.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/Library/MpInitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/X64/MpFuncs.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/X64/MpFuncs.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/Library/MpInitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib/OUTPUT/X64/MpFuncs.iii
 
 
 

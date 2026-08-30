@@ -1,34 +1,34 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxeStrDefs.h" 1
-# 37 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxeStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxeStrDefs.h" 1
+# 37 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxeStrDefs.h"
 extern unsigned char VlanConfigDxeStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
-# 9 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 1
-# 12 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/HiiPlatformSetupFormset.h" 1
-# 28 "/home/mcw/MCW/Dell/EDK2/edk2/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
+# 9 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 1
+# 12 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/HiiPlatformSetupFormset.h" 1
+# 28 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdePkg/Include/Guid/HiiPlatformSetupFormset.h"
 extern EFI_GUID gEfiHiiPlatformSetupFormsetGuid;
 extern EFI_GUID gEfiHiiDriverHealthFormsetGuid;
 extern EFI_GUID gEfiHiiUserCredentialFormsetGuid;
 extern EFI_GUID gEfiHiiRestStyleFormsetGuid;
-# 13 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/Include/Guid/VlanConfigHii.h" 1
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/Include/Guid/VlanConfigHii.h"
+# 13 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/Include/Guid/VlanConfigHii.h" 1
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/Include/Guid/VlanConfigHii.h"
 extern EFI_GUID { 0xd79df6b0, 0xef44, 0x43bd, { 0x97, 0x97, 0x43, 0xe9, 0x3b, 0xcf, 0x5f, 0xa8 }};
-# 14 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 2
-# 34 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h"
+# 14 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h" 2
+# 34 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigNvData.h"
 typedef struct {
   UINT16 VlanId;
   UINT8 Priority;
   UINT8 VlanList[100];
 } VLAN_CONFIGURATION;
-# 10 "/home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr" 2
+# 10 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr" 2
 
 formset
   guid = { 0xd79df6b0, 0xef44, 0x43bd, {0x97, 0x97, 0x43, 0xe9, 0x3b, 0xcf, 0x5f, 0xa8 } },

@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = CpuMpPei
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = UefiCpuPkg/CpuMpPei
 PACKAGE_RELATIVE_DIR = CpuMpPei
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6CpuMpPei
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6CpuMpPei
 
 MODULE_ENTRY_POINT = CpuMpPeimInit
 ARCH_ENTRY_POINT = CpuMpPeimInit
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -249,13 +249,13 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg \
     -I$(WORKSPACE)/UefiCpuPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/static_library_files.lst
 
 
 #
@@ -265,7 +265,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -383,52 +383,52 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/AutoGen.c
-
-$(OUTPUT_DIR)/CpuPaging.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CpuPaging.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CpuPaging.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuPaging.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuPaging.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei/CpuPaging.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/AutoGen.c
 
 $(OUTPUT_DIR)/CpuBist.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CpuBist.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CpuBist.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuBist.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuBist.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei/CpuBist.c
-
-$(OUTPUT_DIR)/CpuMpPei.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CpuMpPei.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CpuMpPei.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuMpPei.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMpPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei/CpuMpPei.c
-
-$(OUTPUT_DIR)/CpuMp2.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/CpuMp2.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/CpuMp2.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuMp2.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMp2.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei/CpuMp2.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuBist.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei/CpuBist.c
 
 $(OUTPUT_DIR)/CpuMp.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/CpuMp.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/CpuMp.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuMp.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMp.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/UefiCpuPkg/CpuMpPei/CpuMp.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMp.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei/CpuMp.c
+
+$(OUTPUT_DIR)/CpuMpPei.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CpuMpPei.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CpuMpPei.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuMpPei.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMpPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei/CpuMpPei.c
+
+$(OUTPUT_DIR)/CpuPaging.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CpuPaging.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CpuPaging.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuPaging.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuPaging.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei/CpuPaging.c
+
+$(OUTPUT_DIR)/CpuMp2.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/CpuMp2.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/CpuMp2.obj : $(WORKSPACE)/UefiCpuPkg/CpuMpPei/CpuMp2.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/./CpuMp2.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/UefiCpuPkg/CpuMpPei/CpuMp2.c
 
 $(OUTPUT_DIR)/CpuMpPei.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/CpuMpPei.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/CpuMpPei.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/CpuMpPei.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/CpuMpPei.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(DLINK_FLAGS) $(DLINK_XIPFLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(CC_XIPFLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(DLINK_FLAGS) $(DLINK_XIPFLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(CC_XIPFLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
 
 $(OUTPUT_DIR)/CpuMpPei.efi : $(DEBUG_DIR)/CpuMpPei.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/DEBUG/CpuMpPei.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/UefiCpuPkg/CpuMpPei/CpuMpPei/OUTPUT/CpuMpPei.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

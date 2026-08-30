@@ -1,0 +1,27 @@
+[Defines]
+INF_VERSION     = 0x00010017
+BASE_NAME       = PciTestDxe
+FILE_GUID       = A1B2C3D4-E5F6-47A8-91B2-C3D4E5F67890
+MODULE_TYPE     = DXE_DRIVER
+ENTRY_POINT     = PciTestEntry
+
+[Sources]
+PciTestDxe.c
+
+[Packages]
+MdePkg/MdePkg.dec
+MdeModulePkg/MdeModulePkg.dec
+UefiLearningsPkg/UefiLearningsPkg.dec
+
+[LibraryClasses]
+UefiDriverEntryPoint
+UefiLib
+UefiBootServicesTableLib
+DebugLib
+MemoryAllocationLib
+
+[Protocols]
+gEfiPciIoProtocolGuid
+
+[Depex]
+gEfiSimpleTextOutProtocolGuid AND gEfiPciIoProtocolGuid

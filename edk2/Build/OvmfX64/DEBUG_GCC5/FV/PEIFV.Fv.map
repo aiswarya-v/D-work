@@ -1,54 +1,54 @@
 EFI_FV_TOTAL_SIZE = 0xd0000
-EFI_FV_TAKEN_SIZE = 0x57b28
-EFI_FV_SPACE_SIZE = 0x784d8
+EFI_FV_TAKEN_SIZE = 0x58528
+EFI_FV_SPACE_SIZE = 0x77ad8
 
 PeiCore (Fixed Flash Address, BaseAddress=0x0000830140, EntryPoint=0x0000838517, Type=PE)
-(GUID=52C05B14-0B98-496C-BC3B-04B50211D680 .textbaseaddress=0x0000830380 .databaseaddress=0x000083ccc0)
+(GUID=52C05B14-0B98-496C-BC3B-04B50211D680 .textbaseaddress=0x0000830380 .databaseaddress=0x000083ce00)
 
 
 
-PcdPeim (Fixed Flash Address, BaseAddress=0x000083d640, EntryPoint=0x00008409ae, Type=PE)
-(GUID=9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 .textbaseaddress=0x000083d880 .databaseaddress=0x0000842200)
+PcdPeim (Fixed Flash Address, BaseAddress=0x000083d7c0, EntryPoint=0x0000840b2e, Type=PE)
+(GUID=9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50 .textbaseaddress=0x000083da00 .databaseaddress=0x0000842400)
 
 
 
-ReportStatusCodeRouterPei (Fixed Flash Address, BaseAddress=0x00008427c0, EntryPoint=0x0000843c0e, Type=PE)
-(GUID=A3610442-E69F-4DF3-82CA-2360C4031A23 .textbaseaddress=0x0000842a00 .databaseaddress=0x0000844700)
+ReportStatusCodeRouterPei (Fixed Flash Address, BaseAddress=0x00008429c0, EntryPoint=0x0000843e0e, Type=PE)
+(GUID=A3610442-E69F-4DF3-82CA-2360C4031A23 .textbaseaddress=0x0000842c00 .databaseaddress=0x0000844940)
 
 
 
-StatusCodeHandlerPei (Fixed Flash Address, BaseAddress=0x0000844a40, EntryPoint=0x0000845d53, Type=PE)
-(GUID=9D225237-FA01-464C-A949-BAABC02D31D0 .textbaseaddress=0x0000844c80 .databaseaddress=0x0000846980)
+StatusCodeHandlerPei (Fixed Flash Address, BaseAddress=0x0000844cc0, EntryPoint=0x0000845fd3, Type=PE)
+(GUID=9D225237-FA01-464C-A949-BAABC02D31D0 .textbaseaddress=0x0000844f00 .databaseaddress=0x0000846c40)
 
 
 
-TdTcg2Pei (Fixed Flash Address, BaseAddress=0x0000846bc0, EntryPoint=0x0000848aaa, Type=PE)
-(GUID=FCB3A3D6-6274-411C-A548-BD0E717D533A .textbaseaddress=0x0000846e00 .databaseaddress=0x000084a140)
+TdTcg2Pei (Fixed Flash Address, BaseAddress=0x0000846ec0, EntryPoint=0x0000848daa, Type=PE)
+(GUID=FCB3A3D6-6274-411C-A548-BD0E717D533A .textbaseaddress=0x0000847100 .databaseaddress=0x000084a4c0)
 
 
 
-PlatformPei (Fixed Flash Address, BaseAddress=0x000084a440, EntryPoint=0x00008537d1, Type=PE)
-(GUID=222C386D-5ABC-4FB4-B124-FBB82488ACF4 .textbaseaddress=0x000084a680 .databaseaddress=0x00008603c0)
+PlatformPei (Fixed Flash Address, BaseAddress=0x000084a840, EntryPoint=0x0000853bd1, Type=PE)
+(GUID=222C386D-5ABC-4FB4-B124-FBB82488ACF4 .textbaseaddress=0x000084aa80 .databaseaddress=0x00008609c0)
 
 
 
-DxeIpl (Fixed Flash Address, BaseAddress=0x0000861cc0, EntryPoint=0x00008651c1, Type=PE)
-(GUID=86D70125-BAA3-4296-A62F-602BEBBB9081 .textbaseaddress=0x0000861f00 .databaseaddress=0x0000866700)
+DxeIpl (Fixed Flash Address, BaseAddress=0x00008622c0, EntryPoint=0x00008657c1, Type=PE)
+(GUID=86D70125-BAA3-4296-A62F-602BEBBB9081 .textbaseaddress=0x0000862500 .databaseaddress=0x0000866dc0)
 
 
 
-S3Resume2Pei (Fixed Flash Address, BaseAddress=0x0000866b40, EntryPoint=0x0000869726, Type=PE)
-(GUID=89E549B0-7CFE-449D-9BA3-10D8B2312D71 .textbaseaddress=0x0000866d80 .databaseaddress=0x000086b3c0)
+S3Resume2Pei (Fixed Flash Address, BaseAddress=0x00008671c0, EntryPoint=0x0000869da6, Type=PE)
+(GUID=89E549B0-7CFE-449D-9BA3-10D8B2312D71 .textbaseaddress=0x0000867400 .databaseaddress=0x000086bb00)
 
 
 
-CpuMpPei (Fixed Flash Address, BaseAddress=0x000086b8c0, EntryPoint=0x0000871b1e, Type=PE)
-(GUID=EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 .textbaseaddress=0x000086bb00 .databaseaddress=0x000087dc00)
+CpuMpPei (Fixed Flash Address, BaseAddress=0x000086bfc0, EntryPoint=0x000087221e, Type=PE)
+(GUID=EDADEB9D-DDBA-48BD-9D22-C1C169C8C5C6 .textbaseaddress=0x000086c200 .databaseaddress=0x000087e4c0)
 
 
 
-CpuMpPei (Fixed Flash Address, BaseAddress=0x000087e2c0, EntryPoint=0x0000883543, Type=PE)
-(GUID=280251C4-1D09-4035-9062-839ACB5F18C1 .textbaseaddress=0x000087e500 .databaseaddress=0x0000887740)
+CpuMpPei (Fixed Flash Address, BaseAddress=0x000087ebc0, EntryPoint=0x0000883e43, Type=PE)
+(GUID=280251C4-1D09-4035-9062-839ACB5F18C1 .textbaseaddress=0x000087ee00 .databaseaddress=0x0000888140)
 
 
 

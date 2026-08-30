@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = VlanConfigDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = NetworkPkg/VlanConfigDxe
 PACKAGE_RELATIVE_DIR = VlanConfigDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/E4F61863-FE2C-4b56-A8F4-08519BC439DFVlanConfigDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/E4F61863-FE2C-4b56-A8F4-08519BC439DFVlanConfigDxe
 
 MODULE_ENTRY_POINT = VlanConfigDriverEntryPoint
 ARCH_ENTRY_POINT = VlanConfigDriverEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -231,13 +231,13 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/NetworkPkg \
     -I$(WORKSPACE)/NetworkPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -247,7 +247,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -345,53 +345,53 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/VlanConfigDriver.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/VlanConfigDriver.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/VlanConfigDriver.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
-$(OUTPUT_DIR)/VlanConfigDriver.obj : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/VlanConfigDriver.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfigDriver.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigDriver.c
+$(OUTPUT_DIR)/VlanConfigImpl.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/VlanConfigImpl.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/VlanConfigImpl.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
+$(OUTPUT_DIR)/VlanConfigImpl.obj : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/VlanConfigImpl.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfigImpl.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigImpl.c
 
 $(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
 $(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/ComponentName.c
 
-$(OUTPUT_DIR)/VlanConfigImpl.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/VlanConfigImpl.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/VlanConfigImpl.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
-$(OUTPUT_DIR)/VlanConfigImpl.obj : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/VlanConfigImpl.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfigImpl.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfigImpl.c
-
-$(OUTPUT_DIR)/VlanConfig.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/VlanConfig.obj : $(DEBUG_DIR)/VlanConfig.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfig.c
+$(OUTPUT_DIR)/VlanConfigDriver.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/VlanConfigDriver.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/VlanConfigDriver.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
+$(OUTPUT_DIR)/VlanConfigDriver.obj : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/VlanConfigDriver.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfigDriver.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfigDriver.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/VlanConfig.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/VlanConfig.obj : $(DEBUG_DIR)/VlanConfig.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/./VlanConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfig.c
 
 $(OUTPUT_DIR)/VlanConfigDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/VlanConfigDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/VlanConfigDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/VlanConfigDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/VlanConfigDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
 
 $(OUTPUT_DIR)/VlanConfigDxe.efi : $(DEBUG_DIR)/VlanConfigDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/OUTPUT/VlanConfigDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 
@@ -405,8 +405,8 @@ $(DEBUG_DIR)/VlanConfig.c : $(MAKE_FILE)
 $(DEBUG_DIR)/VlanConfig.c : $(DEBUG_DIR)/AutoGen.h
 $(DEBUG_DIR)/VlanConfig.c : $(DEBUG_DIR)/VlanConfigDxeStrDefs.h
 $(DEBUG_DIR)/VlanConfig.c : $(WORKSPACE)/NetworkPkg/VlanConfigDxe/VlanConfig.vfr
-	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr > $(OUTPUT_DIR)/VlanConfig.i
-	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/. $(OUTPUT_DIR)/VlanConfig.i
+	"$(VFRPP)" $(DEPS_FLAGS) $(VFRPP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/NetworkPkg/VlanConfigDxe/VlanConfig.vfr > $(OUTPUT_DIR)/VlanConfig.i
+	"$(VFR)" $(VFR_FLAGS) --string-db $(OUTPUT_DIR)/$(MODULE_NAME)StrDefs.hpk --output-directory /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/. $(OUTPUT_DIR)/VlanConfig.i
 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map : $(OUTPUT_DIR)/VlanConfigDxe.map
 	test -f $(OUTPUT_DIR)/VlanConfigDxe.map && $(CP) $(OUTPUT_DIR)/VlanConfigDxe.map $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map
@@ -417,7 +417,7 @@ $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC1.1.dpx : $(OUTPUT_DIR)/VlanConfigDxe.depex
 $(FFS_OUTPUT_DIR)/VlanConfigDxeOffset.raw : $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset
 	-test -e $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset && GenSec -s EFI_SECTION_RAW -o $(FFS_OUTPUT_DIR)/VlanConfigDxeOffset.raw $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset
 $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset : $(DEBUG_DIR)/VlanConfigDxe.efi
-	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset --ModuleName=VlanConfigDxe --DebugDir=/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG 
+	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/VlanConfigDxe.offset --ModuleName=VlanConfigDxe --DebugDir=/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.1.pe32 : $(OUTPUT_DIR)/VlanConfigDxe.efi
 	-test -e $(OUTPUT_DIR)/VlanConfigDxe.efi && GenSec -s EFI_SECTION_PE32 -o $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.1.pe32 $(OUTPUT_DIR)/VlanConfigDxe.efi
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC3.ui : $(MODULE_DIR)/$(MODULE_FILE)

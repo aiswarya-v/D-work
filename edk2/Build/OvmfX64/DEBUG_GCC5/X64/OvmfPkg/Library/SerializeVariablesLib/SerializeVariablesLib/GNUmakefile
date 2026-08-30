@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = SerializeVariablesLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/SerializeVariablesLib
 PACKAGE_RELATIVE_DIR = Library/SerializeVariablesLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SerializeVariablesLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9515f92a-83ae-45fd-9d2e-e3dc15df52d0DxeSerializeVariablesLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SerializeVariablesLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9515f92a-83ae-45fd-9d2e-e3dc15df52d0DxeSerializeVariablesLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -202,15 +202,15 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include \
     -I$(WORKSPACE)/ShellPkg \
     -I$(WORKSPACE)/ShellPkg/Include \
     -I$(WORKSPACE)/ShellPkg/Test/Mock/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/object_files.lst
 
 
 #
@@ -220,7 +220,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib \
               
 
 #
@@ -298,12 +298,12 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/SerializeVariablesLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SerializeVariablesLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SerializeVariablesLib.obj : $(WORKSPACE)/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/./SerializeVariablesLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/./SerializeVariablesLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib.c
 
 $(OUTPUT_DIR)/DxeSerializeVariablesLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/DxeSerializeVariablesLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SerializeVariablesLib/SerializeVariablesLib/OUTPUT/DxeSerializeVariablesLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

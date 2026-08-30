@@ -1,17 +1,17 @@
 //
 //  VFR compiler version  2.02 (UEFI 2.4) Developer Build based on Revision: Unknown
 //
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiAppStrDefs.h" 1
-# 45 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiAppStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiAppStrDefs.h" 1
+# 45 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Application/UiApp/UiApp/DEBUG/UiAppStrDefs.h"
 extern unsigned char UiAppStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
-# 17 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
+# 17 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Application/UiApp/FrontPageVfr.Vfr"
 formset
 >00000000: 0E A7 BC 30 0C 9E 06 3F A6 4B 82 88 09 17 9B 85 5D BE 02 00 0C 00 01 BC 30 0C 9E 06 3F A6 4B 82 88 09 17 9B 85 5D BE 
 >00000027: 5C 06 00 00 00 00 

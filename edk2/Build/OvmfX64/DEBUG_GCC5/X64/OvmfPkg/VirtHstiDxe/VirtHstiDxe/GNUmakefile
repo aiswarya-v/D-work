@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = VirtHstiDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/VirtHstiDxe
 PACKAGE_RELATIVE_DIR = VirtHstiDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/60740CF3-D428-4500-80E6-04A5798241EDVirtHstiDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/60740CF3-D428-4500-80E6-04A5798241EDVirtHstiDxe
 
 MODULE_ENTRY_POINT = VirtHstiDxeEntrypoint
 ARCH_ENTRY_POINT = VirtHstiDxeEntrypoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -235,8 +235,8 @@ INC =  \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -246,7 +246,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -346,55 +346,55 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Flash.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Flash.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Flash.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/Flash.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./Flash.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe/Flash.c
-
-$(OUTPUT_DIR)/QemuQ35.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/QemuQ35.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/QemuQ35.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/QemuQ35.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuQ35.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe/QemuQ35.c
+$(OUTPUT_DIR)/QemuCommon.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/QemuCommon.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/QemuCommon.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/QemuCommon.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe/QemuCommon.c
 
 $(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/AutoGen.c
 
-$(OUTPUT_DIR)/QemuCommon.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/QemuCommon.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/QemuCommon.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/QemuCommon.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuCommon.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe/QemuCommon.c
+$(OUTPUT_DIR)/QemuQ35.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/QemuQ35.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/QemuQ35.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/QemuQ35.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuQ35.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe/QemuQ35.c
+
+$(OUTPUT_DIR)/Flash.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Flash.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Flash.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/Flash.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./Flash.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe/Flash.c
 
 $(OUTPUT_DIR)/VirtHstiDxe.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/VirtHstiDxe.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/VirtHstiDxe.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/VirtHstiDxe.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./VirtHstiDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe/VirtHstiDxe.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./VirtHstiDxe.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe/VirtHstiDxe.c
 
 $(OUTPUT_DIR)/QemuPC.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/QemuPC.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/QemuPC.obj : $(WORKSPACE)/OvmfPkg/VirtHstiDxe/QemuPC.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuPC.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/VirtHstiDxe/QemuPC.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/./QemuPC.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/VirtHstiDxe/QemuPC.c
 
 $(OUTPUT_DIR)/VirtHstiDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/VirtHstiDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/VirtHstiDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/VirtHstiDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/VirtHstiDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
 
 $(OUTPUT_DIR)/VirtHstiDxe.efi : $(DEBUG_DIR)/VirtHstiDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/DEBUG/VirtHstiDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/VirtHstiDxe/VirtHstiDxe/OUTPUT/VirtHstiDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

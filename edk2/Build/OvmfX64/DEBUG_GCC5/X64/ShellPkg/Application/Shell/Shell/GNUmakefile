@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = Shell
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = ShellPkg/Application/Shell
 PACKAGE_RELATIVE_DIR = Application/Shell
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/7C04A583-9E3E-4f1c-AD65-E05268D0B4D1Shell
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/7C04A583-9E3E-4f1c-AD65-E05268D0B4D1Shell
 
 MODULE_ENTRY_POINT = UefiMain
 ARCH_ENTRY_POINT = UefiMain
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -260,11 +260,11 @@ INC =  \
     -I$(WORKSPACE)/ShellPkg/Include \
     -I$(WORKSPACE)/ShellPkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
-    -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include
+    -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/static_library_files.lst
 
 
 #
@@ -274,7 +274,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -395,79 +395,79 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/Shell.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Shell.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Shell.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/Shell.obj : $(WORKSPACE)/ShellPkg/Application/Shell/Shell.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./Shell.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/Shell.c
-
-$(OUTPUT_DIR)/FileHandleWrappers.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/FileHandleWrappers.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/FileHandleWrappers.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/FileHandleWrappers.obj : $(WORKSPACE)/ShellPkg/Application/Shell/FileHandleWrappers.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./FileHandleWrappers.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/FileHandleWrappers.c
-
 $(OUTPUT_DIR)/ShellEnvVar.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ShellEnvVar.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ShellEnvVar.obj : $(DEBUG_DIR)/ShellStrDefs.h
 $(OUTPUT_DIR)/ShellEnvVar.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellEnvVar.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellEnvVar.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ShellEnvVar.c
-
-$(OUTPUT_DIR)/ConsoleWrappers.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/ConsoleWrappers.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/ConsoleWrappers.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/ConsoleWrappers.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ConsoleWrappers.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ConsoleWrappers.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ConsoleWrappers.c
-
-$(OUTPUT_DIR)/ShellManParser.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/ShellManParser.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/ShellManParser.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/ShellManParser.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellManParser.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellManParser.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ShellManParser.c
-
-$(OUTPUT_DIR)/ShellProtocol.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/ShellProtocol.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/ShellProtocol.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/ShellProtocol.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellProtocol.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellProtocol.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ShellProtocol.c
-
-$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/ShellStrDefs.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellEnvVar.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ShellEnvVar.c
 
 $(OUTPUT_DIR)/ShellParametersProtocol.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ShellParametersProtocol.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ShellParametersProtocol.obj : $(DEBUG_DIR)/ShellStrDefs.h
 $(OUTPUT_DIR)/ShellParametersProtocol.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellParametersProtocol.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellParametersProtocol.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ShellParametersProtocol.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellParametersProtocol.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ShellParametersProtocol.c
+
+$(OUTPUT_DIR)/ShellManParser.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/ShellManParser.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/ShellManParser.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/ShellManParser.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellManParser.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellManParser.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ShellManParser.c
+
+$(OUTPUT_DIR)/ConsoleWrappers.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/ConsoleWrappers.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/ConsoleWrappers.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/ConsoleWrappers.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ConsoleWrappers.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ConsoleWrappers.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ConsoleWrappers.c
+
+$(OUTPUT_DIR)/ShellProtocol.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/ShellProtocol.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/ShellProtocol.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/ShellProtocol.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ShellProtocol.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ShellProtocol.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ShellProtocol.c
+
+$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/FileHandleWrappers.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/FileHandleWrappers.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/FileHandleWrappers.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/FileHandleWrappers.obj : $(WORKSPACE)/ShellPkg/Application/Shell/FileHandleWrappers.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./FileHandleWrappers.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/FileHandleWrappers.c
+
+$(OUTPUT_DIR)/Shell.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Shell.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Shell.obj : $(DEBUG_DIR)/ShellStrDefs.h
+$(OUTPUT_DIR)/Shell.obj : $(WORKSPACE)/ShellPkg/Application/Shell/Shell.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./Shell.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/Shell.c
 
 $(OUTPUT_DIR)/ConsoleLogger.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ConsoleLogger.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ConsoleLogger.obj : $(DEBUG_DIR)/ShellStrDefs.h
 $(OUTPUT_DIR)/ConsoleLogger.obj : $(WORKSPACE)/ShellPkg/Application/Shell/ConsoleLogger.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ConsoleLogger.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/ShellPkg/Application/Shell/ConsoleLogger.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/./ConsoleLogger.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/ShellPkg/Application/Shell/ConsoleLogger.c
 
 $(OUTPUT_DIR)/Shell.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/Shell.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/Shell.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/Shell.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/Shell.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
 
 $(OUTPUT_DIR)/Shell.efi : $(DEBUG_DIR)/Shell.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/OUTPUT/Shell.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 
@@ -486,7 +486,7 @@ $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC1.1.pe32 : $(OUTPUT_DIR)/Shell.efi
 $(FFS_OUTPUT_DIR)/ShellOffset.raw : $(FFS_OUTPUT_DIR)/Shell.offset
 	-test -e $(FFS_OUTPUT_DIR)/Shell.offset && GenSec -s EFI_SECTION_RAW -o $(FFS_OUTPUT_DIR)/ShellOffset.raw $(FFS_OUTPUT_DIR)/Shell.offset
 $(FFS_OUTPUT_DIR)/Shell.offset : $(DEBUG_DIR)/Shell.efi
-	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/Shell.offset --ModuleName=Shell --DebugDir=/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG 
+	Trim --Vfr-Uni-Offset -o $(FFS_OUTPUT_DIR)/Shell.offset --ModuleName=Shell --DebugDir=/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/ShellPkg/Application/Shell/Shell/DEBUG 
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.ui : $(MODULE_DIR)/$(MODULE_FILE)
 	GenSec -s EFI_SECTION_USER_INTERFACE -n $(MODULE_NAME) -o $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC2.ui
 $(FFS_OUTPUT_DIR)/$(MODULE_GUID)SEC3.ver : $(MODULE_DIR)/$(MODULE_FILE)

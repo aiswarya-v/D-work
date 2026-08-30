@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PciBusDxe
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = MdeModulePkg/Bus/Pci/PciBusDxe
 PACKAGE_RELATIVE_DIR = Bus/Pci/PciBusDxe
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/93B80004-9FB3-11d4-9A3A-0090273FC14DPciBusDxe
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/93B80004-9FB3-11d4-9A3A-0090273FC14DPciBusDxe
 
 MODULE_ENTRY_POINT = PciBusEntryPoint
 ARCH_ENTRY_POINT = PciBusEntryPoint
@@ -64,13 +64,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -243,8 +243,8 @@ INC =  \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/c/include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/object_files.lst
-STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/static_library_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/object_files.lst
+STATIC_LIBRARY_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/static_library_files.lst
 
 
 #
@@ -254,7 +254,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).map \
               $(FFS_OUTPUT_DIR)/$(MODULE_GUID).ffs \
               
@@ -350,100 +350,100 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumeratorSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciEnumeratorSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumeratorSupport.c
-
-$(OUTPUT_DIR)/PciResourceSupport.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciResourceSupport.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciResourceSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciResourceSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciResourceSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciResourceSupport.c
-
-$(OUTPUT_DIR)/PciRomTable.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciRomTable.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciRomTable.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciRomTable.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciRomTable.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciRomTable.c
-
-$(OUTPUT_DIR)/PciLib.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciLib.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciLib.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciLib.c
+$(OUTPUT_DIR)/PciEnumerator.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciEnumerator.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciEnumerator.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumerator.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciEnumerator.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumerator.c
 
 $(OUTPUT_DIR)/PciHotPlugSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciHotPlugSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciHotPlugSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciHotPlugSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciHotPlugSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciHotPlugSupport.c
-
-$(OUTPUT_DIR)/PciBus.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciBus.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciBus.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciBus.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.c
-
-$(OUTPUT_DIR)/PciPowerManagement.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciPowerManagement.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciPowerManagement.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciPowerManagement.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciPowerManagement.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciPowerManagement.c
-
-$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciOptionRomSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciHotPlugSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciHotPlugSupport.c
 
 $(OUTPUT_DIR)/PciDriverOverride.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciDriverOverride.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciDriverOverride.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciDriverOverride.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciDriverOverride.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciDriverOverride.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciDriverOverride.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciDriverOverride.c
 
-$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/AutoGen.c
-
-$(OUTPUT_DIR)/PciEnumerator.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/PciEnumerator.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/PciEnumerator.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumerator.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciEnumerator.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumerator.c
-
-$(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/ComponentName.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/ComponentName.c
+$(OUTPUT_DIR)/PciLib.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciLib.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciLib.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciLib.c
 
 $(OUTPUT_DIR)/PciCommand.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciCommand.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciCommand.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciCommand.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciCommand.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciCommand.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciCommand.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciCommand.c
+
+$(OUTPUT_DIR)/PciBus.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciBus.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciBus.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciBus.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciBus.c
 
 $(OUTPUT_DIR)/PciIo.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciIo.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciIo.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciIo.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciIo.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciIo.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciIo.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciIo.c
+
+$(OUTPUT_DIR)/AutoGen.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/AutoGen.obj : $(DEBUG_DIR)/AutoGen.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./AutoGen.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/AutoGen.c
+
+$(OUTPUT_DIR)/PciRomTable.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciRomTable.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciRomTable.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciRomTable.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciRomTable.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciRomTable.c
+
+$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciOptionRomSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciOptionRomSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c
+
+$(OUTPUT_DIR)/PciResourceSupport.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciResourceSupport.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciResourceSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciResourceSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciResourceSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciResourceSupport.c
 
 $(OUTPUT_DIR)/PciDeviceSupport.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/PciDeviceSupport.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/PciDeviceSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciDeviceSupport.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciDeviceSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciDeviceSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciDeviceSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciDeviceSupport.c
+
+$(OUTPUT_DIR)/ComponentName.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/ComponentName.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/ComponentName.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/ComponentName.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./ComponentName.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/ComponentName.c
+
+$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciEnumeratorSupport.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumeratorSupport.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciEnumeratorSupport.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciEnumeratorSupport.c
+
+$(OUTPUT_DIR)/PciPowerManagement.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/PciPowerManagement.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/PciPowerManagement.obj : $(WORKSPACE)/MdeModulePkg/Bus/Pci/PciBusDxe/PciPowerManagement.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/./PciPowerManagement.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Bus/Pci/PciBusDxe/PciPowerManagement.c
 
 $(OUTPUT_DIR)/PciBusDxe.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PciBusDxe.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(DEBUG_DIR)/PciBusDxe.dll : $(MAKE_FILE)
 $(DEBUG_DIR)/PciBusDxe.dll : $(STATIC_LIBRARY_FILES)
 $(DEBUG_DIR)/PciBusDxe.dll : $(STATIC_LIBRARY_FILES_LIST)
-	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
-	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
+	"$(DLINK)" -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(DLINK_FLAGS) -Wl,--start-group,@$(STATIC_LIBRARY_FILES_LIST),--end-group $(CC_FLAGS) $(DLINK2_FLAGS)
+	"$(OBJCOPY)" $(OBJCOPY_FLAGS) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
 
 $(OUTPUT_DIR)/PciBusDxe.efi : $(DEBUG_DIR)/PciBusDxe.dll
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
-	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
-	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(DEBUG_DIR)/$(MODULE_NAME).debug
+	"$(OBJCOPY)" $(OBJCOPY_STRIPFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
+	-"$(OBJCOPY)" $(OBJCOPY_ADDDEBUGFLAG) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll
 	-$(CP) $(DEBUG_DIR)/$(MODULE_NAME).debug $(BIN_DIR)/$(MODULE_NAME_GUID).debug
-	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(GENFW_FLAGS)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi $(DEBUG_DIR)
-	$(CP) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
+	"$(GENFW)" -e $(MODULE_TYPE) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll $(GENFW_FLAGS)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi $(DEBUG_DIR)
+	$(CP) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/OUTPUT/PciBusDxe.efi $(BIN_DIR)/$(MODULE_NAME_GUID).efi
 	-$(CP) $(DEBUG_DIR)/*.map $(OUTPUT_DIR)
 	-$(CP) $(DEBUG_DIR)/*.pdb $(OUTPUT_DIR)
 

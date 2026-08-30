@@ -1,16 +1,16 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib/DEBUG/FileExplorerLibStrDefs.h" 1
-# 35 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib/DEBUG/FileExplorerLibStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib/DEBUG/FileExplorerLibStrDefs.h" 1
+# 35 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib/DEBUG/FileExplorerLibStrDefs.h"
 extern unsigned char FileExplorerLibStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
-# 10 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/FileExplorerLib/FormGuid.h" 1
-# 11 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr" 2
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
+# 10 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/FileExplorerLib/FormGuid.h" 1
+# 11 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerVfr.vfr" 2
 
 formset
   guid = { 0xfe561596, 0xe6bf, 0x41a6, {0x83, 0x76, 0xc7, 0x2b, 0x71, 0x98, 0x74, 0xd0} },

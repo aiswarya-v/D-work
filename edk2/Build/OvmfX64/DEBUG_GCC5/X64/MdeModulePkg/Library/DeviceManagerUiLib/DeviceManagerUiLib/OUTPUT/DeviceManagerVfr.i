@@ -1,14 +1,14 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib/DEBUG/DeviceManagerUiLibStrDefs.h" 1
-# 39 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib/DEBUG/DeviceManagerUiLibStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib/DEBUG/DeviceManagerUiLibStrDefs.h" 1
+# 39 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib/DEBUG/DeviceManagerUiLibStrDefs.h"
 extern unsigned char DeviceManagerUiLibStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
-# 21 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
+# 21 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerVfr.Vfr"
 formset
   guid = { 0x3ebfa8e6, 0x511d, 0x4b5b, 0xa9, 0x5f, 0xfb, 0x38, 0x26, 0xf, 0x1c, 0x27 },
   title = STRING_TOKEN(0x0002),

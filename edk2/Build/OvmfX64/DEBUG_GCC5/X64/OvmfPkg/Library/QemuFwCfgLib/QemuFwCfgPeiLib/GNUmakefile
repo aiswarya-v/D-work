@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = QemuFwCfgPeiLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/QemuFwCfgLib
 PACKAGE_RELATIVE_DIR = Library/QemuFwCfgLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuFwCfgLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/ddd4f5f0-5304-42a8-9efa-d14bf11a3533QemuFwCfgPeiLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuFwCfgLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/ddd4f5f0-5304-42a8-9efa-d14bf11a3533QemuFwCfgPeiLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -207,15 +207,15 @@ INC =  \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/SecurityPkg \
     -I$(WORKSPACE)/SecurityPkg/Include \
     -I$(WORKSPACE)/SecurityPkg/Test/Mock/Include \
     -I$(WORKSPACE)/SecurityPkg/DeviceSecurity/SpdmLib/Include \
     -I$(WORKSPACE)/SecurityPkg/DeviceSecurity/SpdmLib/libspdm/include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/object_files.lst
 
 
 #
@@ -225,7 +225,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib \
               
 
 #
@@ -300,30 +300,30 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
-$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCacheInit.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgCacheInit.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCacheInit.c
-
-$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPei.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPei.c
-
 $(OUTPUT_DIR)/QemuFwCfgCache.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/QemuFwCfgCache.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/QemuFwCfgCache.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCache.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgCache.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCache.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgCache.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCache.c
 
 $(OUTPUT_DIR)/QemuFwCfgLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/QemuFwCfgLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/QemuFwCfgLib.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgLib.c
+
+$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/QemuFwCfgPei.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPei.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgPei.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPei.c
+
+$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/QemuFwCfgCacheInit.obj : $(WORKSPACE)/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCacheInit.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/./QemuFwCfgCacheInit.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgCacheInit.c
 
 $(OUTPUT_DIR)/QemuFwCfgPeiLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/QemuFwCfgPeiLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib/OUTPUT/QemuFwCfgPeiLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

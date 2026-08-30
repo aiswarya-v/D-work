@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = SmmRelocationLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/SmmRelocationLib
 PACKAGE_RELATIVE_DIR = Library/SmmRelocationLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/51834F51-CCE0-4743-B553-935D0C8A53FFSmmRelocationLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/51834F51-CCE0-4743-B553-935D0C8A53FFSmmRelocationLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -206,8 +206,8 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/UefiCpuPkg \
     -I$(WORKSPACE)/UefiCpuPkg/Include
 
@@ -222,13 +222,13 @@ NASM_INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include/ \
     -I$(WORKSPACE)/MdePkg/Include/X64/ \
     -I$(WORKSPACE)/MdeModulePkg/ \
-    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
+    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/inc.lst
 
 
 #
@@ -238,7 +238,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib \
               
 
 #
@@ -313,33 +313,33 @@ include $(MODULE_BUILD_DIR)/deps_target
 #
 # Individual Object Build Targets
 #
+$(OUTPUT_DIR)/X64/Semaphore.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/X64/Semaphore.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/X64/Semaphore.obj : $(WORKSPACE)/OvmfPkg/Library/SmmRelocationLib/X64/Semaphore.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/Semaphore.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/X64/Semaphore.c
+
 $(OUTPUT_DIR)/SmmRelocationLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SmmRelocationLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SmmRelocationLib.obj : $(WORKSPACE)/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/./SmmRelocationLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/./SmmRelocationLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib.c
 
 $(OUTPUT_DIR)/SmramSaveStateConfig.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/SmramSaveStateConfig.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/SmramSaveStateConfig.obj : $(WORKSPACE)/OvmfPkg/Library/SmmRelocationLib/SmramSaveStateConfig.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/./SmramSaveStateConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/SmramSaveStateConfig.c
-
-$(OUTPUT_DIR)/X64/Semaphore.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/X64/Semaphore.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/X64/Semaphore.obj : $(WORKSPACE)/OvmfPkg/Library/SmmRelocationLib/X64/Semaphore.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/Semaphore.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/X64/Semaphore.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/./SmramSaveStateConfig.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/SmramSaveStateConfig.c
 
 $(OUTPUT_DIR)/SmmRelocationLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/SmmRelocationLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/SmmRelocationLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/X64/SmmInit.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/SmmInit.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/SmmInit.obj : $(WORKSPACE)/OvmfPkg/Library/SmmRelocationLib/X64/SmmInit.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/X64/SmmInit.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/X64/SmmInit.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/SmmRelocationLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/X64/SmmInit.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/X64/SmmInit.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/SmmRelocationLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib/OUTPUT/X64/SmmInit.iii
 
 
 

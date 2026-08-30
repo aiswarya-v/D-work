@@ -1,1 +1,1 @@
-/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/HardwareInfoLib/PeiHardwareInfoLib/GNUmakefile
+/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/HardwareInfoLib/PeiHardwareInfoLib/GNUmakefile

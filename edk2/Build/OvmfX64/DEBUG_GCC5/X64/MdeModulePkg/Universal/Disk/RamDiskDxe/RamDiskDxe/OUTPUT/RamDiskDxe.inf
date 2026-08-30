@@ -25,8 +25,8 @@
   MdeModulePkg/MdeModulePkg.dec
 
 [Binaries.X64]
-  ASL|RamDisk.aml
   PE32|RamDiskDxe.efi
+  ASL|RamDisk.aml
   DXE_DEPEX|RamDiskDxe.depex
   BIN|RamDiskDxeOffset.bin
 

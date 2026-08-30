@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = PlatformInitLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/PlatformInitLib
 PACKAGE_RELATIVE_DIR = Library/PlatformInitLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/89f886b0-7109-46e1-9d28-503ad4ab6ee0PlatformInitLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/89f886b0-7109-46e1-9d28-503ad4ab6ee0PlatformInitLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -205,8 +205,8 @@ INC =  \
     -I$(WORKSPACE)/EmbeddedPkg/Include \
     -I$(WORKSPACE)/EmbeddedPkg/Test/Mock/Include \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdePkg \
     -I$(WORKSPACE)/MdePkg/Include \
     -I$(WORKSPACE)/MdePkg/Test/UnitTest/Include \
@@ -226,8 +226,8 @@ NASM_INC =  \
     -I$(WORKSPACE)/EmbeddedPkg/Include/ \
     -I$(WORKSPACE)/EmbeddedPkg/Test/Mock/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/ \
-    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include/ \
+    -I$(WORKSPACE)/MdeModulePkg/Include/ \
     -I$(WORKSPACE)/MdePkg/ \
     -I$(WORKSPACE)/MdePkg/Include/ \
     -I$(WORKSPACE)/MdePkg/Test/UnitTest/Include/ \
@@ -239,8 +239,8 @@ NASM_INC =  \
     -I$(WORKSPACE)/UefiCpuPkg/ \
     -I$(WORKSPACE)/UefiCpuPkg/Include/
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/object_files.lst
-INC_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/inc.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/object_files.lst
+INC_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/inc.lst
 
 
 #
@@ -250,7 +250,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib \
               
 
 #
@@ -328,40 +328,40 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/Cmos.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Cmos.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Cmos.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/Cmos.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Cmos.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/Cmos.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Cmos.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/Cmos.c
 
 $(OUTPUT_DIR)/IntelTdx.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/IntelTdx.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/IntelTdx.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/IntelTdx.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./IntelTdx.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/IntelTdx.c
-
-$(OUTPUT_DIR)/Platform.obj : $(MAKE_FILE)
-$(OUTPUT_DIR)/Platform.obj : $(DEBUG_DIR)/AutoGen.h
-$(OUTPUT_DIR)/Platform.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/Platform.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Platform.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/Platform.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./IntelTdx.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/IntelTdx.c
 
 $(OUTPUT_DIR)/MemDetect.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/MemDetect.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/MemDetect.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/MemDetect.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./MemDetect.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/MemDetect.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./MemDetect.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/MemDetect.c
+
+$(OUTPUT_DIR)/Platform.obj : $(MAKE_FILE)
+$(OUTPUT_DIR)/Platform.obj : $(DEBUG_DIR)/AutoGen.h
+$(OUTPUT_DIR)/Platform.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/Platform.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Platform.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/Platform.c
 
 $(OUTPUT_DIR)/Igvm.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/Igvm.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/Igvm.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/Igvm.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Igvm.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/Igvm.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/./Igvm.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/Igvm.c
 
 $(OUTPUT_DIR)/PlatformInitLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/PlatformInitLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/PlatformInitLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 $(OUTPUT_DIR)/X64/Paging.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/X64/Paging.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/X64/Paging.obj : $(WORKSPACE)/OvmfPkg/Library/PlatformInitLib/X64/Paging.nasm
-	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/X64/Paging.nasm
-	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/X64/Paging.nasm > /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.ii
-	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.iii /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.ii
-	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/PlatformInitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.obj /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.iii
+	Trim --asm-file -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.i -i $(INC_LIST) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/X64/Paging.nasm
+	"$(PP)" $(DEPS_FLAGS) $(PP_FLAGS) $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/X64/Paging.nasm > /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.ii
+	Trim --trim-long --source-code -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.iii /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.ii
+	"$(NASM)" -I/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/PlatformInitLib/X64/ $(NASM_INC) $(NASM_FLAGS) -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.obj /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/PlatformInitLib/PlatformInitLib/OUTPUT/X64/Paging.iii
 
 
 

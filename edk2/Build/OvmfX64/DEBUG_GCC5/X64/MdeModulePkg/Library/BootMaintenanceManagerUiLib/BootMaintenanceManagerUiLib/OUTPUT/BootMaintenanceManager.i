@@ -1,16 +1,16 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib/DEBUG/BootMaintenanceManagerUiLibStrDefs.h" 1
-# 154 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib/DEBUG/BootMaintenanceManagerUiLibStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib/DEBUG/BootMaintenanceManagerUiLibStrDefs.h" 1
+# 153 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib/DEBUG/BootMaintenanceManagerUiLibStrDefs.h"
 extern unsigned char BootMaintenanceManagerUiLibStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
-# 9 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/FormGuid.h" 1
-# 96 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/FormGuid.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
+# 9 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/FormGuid.h" 1
+# 96 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/FormGuid.h"
 typedef struct {
 
 
@@ -117,10 +117,8 @@ typedef struct {
   BOOLEAN DriverOptionChanged;
   UINT8 Active;
   UINT8 ForceReconnect;
-  UINT8 ProtocolCheck;
-  UINT8 CustomCheckbox;
 } BMM_FAKE_NV_DATA;
-# 10 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr" 2
+# 10 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManager.vfr" 2
 
 formset
   guid = { 0x642237c7, 0x35d4, 0x472d, {0x83, 0x65, 0x12, 0xe0, 0xcc, 0xf2, 0x7a, 0x22} },
@@ -182,17 +180,6 @@ formset
             help = STRING_TOKEN(0x000E),
             flags = INTERACTIVE,
             key = 0x1004;
-
-       grayoutif ideqval BmmData.ProtocolCheck == 0;
-
-       checkbox varid = BmmData.CustomCheckbox,
-            prompt = STRING_TOKEN(0x0064),
-            help = STRING_TOKEN(0x0064),
-            flags = CHECKBOX_DEFAULT,
-            key = 0,
-       endcheckbox;
-
-       endif;
   endform;
 
   form formid = 0x1015,

@@ -23,7 +23,7 @@ PLATFORM_NAME = Ovmf
 PLATFORM_GUID = 5a9e7754-d81b-49ea-85ad-69eaa7b1539b
 PLATFORM_VERSION = 0.1
 PLATFORM_RELATIVE_DIR = OvmfPkg
-PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg
+PLATFORM_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg
 PLATFORM_OUTPUT_DIR = Build/OvmfX64
 
 #
@@ -39,8 +39,8 @@ MODULE_FILE_BASE_NAME = QemuBootOrderLib
 BASE_NAME = $(MODULE_NAME)
 MODULE_RELATIVE_DIR = OvmfPkg/Library/QemuBootOrderLib
 PACKAGE_RELATIVE_DIR = Library/QemuBootOrderLib
-MODULE_DIR = /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuBootOrderLib
-FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/1D677A58-C753-4AF1-B552-EFE142DF8F57QemuBootOrderLib
+MODULE_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuBootOrderLib
+FFS_OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/1D677A58-C753-4AF1-B552-EFE142DF8F57QemuBootOrderLib
 
 MODULE_ENTRY_POINT = _ModuleEntryPoint
 ARCH_ENTRY_POINT = _ModuleEntryPoint
@@ -63,13 +63,13 @@ TARGET = DEBUG
 #
 # Build Directory Macro Definition
 #
-# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
-BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5
+# PLATFORM_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
+BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5
 BIN_DIR = $(BUILD_DIR)/X64
 LIB_DIR = $(BIN_DIR)
-MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib
-OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT
-DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/DEBUG
+MODULE_BUILD_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib
+OUTPUT_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT
+DEBUG_DIR = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/DEBUG
 DEST_DIR_OUTPUT = $(OUTPUT_DIR)
 DEST_DIR_DEBUG = $(DEBUG_DIR)
 
@@ -203,12 +203,12 @@ INC =  \
     -I$(WORKSPACE)/MdePkg/Library/MipiSysTLib/mipisyst/library/include \
     -I$(WORKSPACE)/MdePkg/Include/X64 \
     -I$(WORKSPACE)/MdeModulePkg \
-    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/MdeModulePkg/Test/Mock/Include \
+    -I$(WORKSPACE)/MdeModulePkg/Include \
     -I$(WORKSPACE)/OvmfPkg \
     -I$(WORKSPACE)/OvmfPkg/Include
 
-OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/object_files.lst
+OBJECT_FILES_LIST = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/object_files.lst
 
 
 #
@@ -218,7 +218,7 @@ FORCE_REBUILD = force_build
 INIT_TARGET = init
 PCH_TARGET =
 BC_TARGET = 
-CODA_TARGET = /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib \
+CODA_TARGET = /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib \
               
 
 #
@@ -296,17 +296,17 @@ include $(MODULE_BUILD_DIR)/deps_target
 $(OUTPUT_DIR)/QemuBootOrderLib.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/QemuBootOrderLib.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/QemuBootOrderLib.obj : $(WORKSPACE)/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/./QemuBootOrderLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/./QemuBootOrderLib.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib.c
 
 $(OUTPUT_DIR)/ExtraRootBusMap.obj : $(MAKE_FILE)
 $(OUTPUT_DIR)/ExtraRootBusMap.obj : $(DEBUG_DIR)/AutoGen.h
 $(OUTPUT_DIR)/ExtraRootBusMap.obj : $(WORKSPACE)/OvmfPkg/Library/QemuBootOrderLib/ExtraRootBusMap.c
-	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/./ExtraRootBusMap.obj $(INC) /home/mcw/MCW/Dell/EDK2/edk2/OvmfPkg/Library/QemuBootOrderLib/ExtraRootBusMap.c
+	"$(CC)" $(DEPS_FLAGS) $(CC_FLAGS) -c -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/./ExtraRootBusMap.obj $(INC) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/OvmfPkg/Library/QemuBootOrderLib/ExtraRootBusMap.c
 
 $(OUTPUT_DIR)/QemuBootOrderLib.lib : $(OBJECT_FILES)
 $(OUTPUT_DIR)/QemuBootOrderLib.lib : $(OBJECT_FILES_LIST)
-	$(RM) /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib
-	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
+	$(RM) /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib
+	"$(SLINK)" cr /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/OvmfPkg/Library/QemuBootOrderLib/QemuBootOrderLib/OUTPUT/QemuBootOrderLib.lib $(SLINK_FLAGS) @$(OBJECT_FILES_LIST)
 
 
 

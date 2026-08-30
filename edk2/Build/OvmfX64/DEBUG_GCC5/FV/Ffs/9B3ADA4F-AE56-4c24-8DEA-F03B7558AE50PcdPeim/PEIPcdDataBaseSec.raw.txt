@@ -1,1 +1,1 @@
-GenSec -s EFI_SECTION_RAW -o /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50PcdPeim/PEIPcdDataBaseSec.raw /home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Universal/PCD/Pei/Pcd/OUTPUT/PEIPcdDataBase.raw
+GenSec -s EFI_SECTION_RAW -o /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/FV/Ffs/9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50PcdPeim/PEIPcdDataBaseSec.raw /home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Universal/PCD/Pei/Pcd/OUTPUT/PEIPcdDataBase.raw

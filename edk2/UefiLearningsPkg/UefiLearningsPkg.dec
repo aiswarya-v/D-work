@@ -1,0 +1,11 @@
+[Defines]
+  DEC_SPECIFICATION  = 0x00010005
+  PACKAGE_NAME       = UefiLearningsPkg
+  PACKAGE_GUID       = 11111111-1111-1111-1111-111111111111
+  PACKAGE_VERSION    = 0.1
+
+[Includes]
+  Include
+
+[Protocols]
+  gPciProtocolGuid = { 0x12345678, 0x1234, 0x5678, {0x11,0x22,0x33,0x44,0x55,0x66,0x77,0x88} }

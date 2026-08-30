@@ -208,6 +208,10 @@ INF  OvmfPkg/IncompatiblePciDeviceSupportDxe/IncompatiblePciDeviceSupport.inf
 INF  OvmfPkg/PciHotPlugInitDxe/PciHotPlugInit.inf
 INF  MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf
 INF  MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
+INF UefiLearningsPkg/ProducerDxe/PciProducer.inf
+INF UefiLearningsPkg/ConsumerDxe/PciConsumer.inf
+INF UefiLearningsPkg/PciTestDxe/PciTestDxe.inf
+
 
 INF  MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
 INF  MdeModulePkg/Universal/Metronome/Metronome.inf

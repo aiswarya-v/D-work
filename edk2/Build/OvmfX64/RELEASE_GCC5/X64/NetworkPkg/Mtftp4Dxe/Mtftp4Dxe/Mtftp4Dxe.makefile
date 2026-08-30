@@ -1,1 +1,0 @@
-/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/RELEASE_GCC5/X64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/GNUmakefile

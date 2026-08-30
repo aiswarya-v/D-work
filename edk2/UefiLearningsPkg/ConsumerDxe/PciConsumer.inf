@@ -1,0 +1,27 @@
+[Defines]
+  INF_VERSION                    = 0x00010017
+  BASE_NAME                      = ConsumerDxe
+  FILE_GUID                      = 66666666-7777-8888-9999-AAAAAAAAAAAA
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = PciConsumerEntry
+
+[Sources]
+  PciConsumer.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  UefiLearningsPkg/UefiLearningsPkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  DebugLib
+  UefiLib
+
+[Protocols]
+  gEfiPciIoProtocolGuid
+  gPciProtocolGuid
+
+[Depex]
+  TRUE

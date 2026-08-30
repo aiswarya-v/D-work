@@ -1,14 +1,14 @@
-# 0 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
+# 0 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerUiLibStrDefs.h" 1
-# 26 "/home/mcw/MCW/Dell/EDK2/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerUiLibStrDefs.h"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerUiLibStrDefs.h" 1
+# 26 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/Build/OvmfX64/DEBUG_GCC5/X64/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib/DEBUG/BootManagerUiLibStrDefs.h"
 extern unsigned char BootManagerUiLibStrings[];
 # 0 "<command-line>" 2
-# 1 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
-# 16 "/home/mcw/MCW/Dell/EDK2/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
+# 1 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
+# 16 "/home/mcw/MCW/Dell/EDK2/git/D-work/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerVfr.Vfr"
 formset
   guid = { 0x847bc3fe, 0xb974, 0x446d, 0x94, 0x49, 0x5a, 0xd5, 0x41, 0x2e, 0x99, 0x3b },
   title = STRING_TOKEN(0x0002),
